@@ -1,6 +1,8 @@
+package Post;
+
 import java.time.LocalDate;
 
-public class PostMultimediale extends Post{
+public class PostMultimediale extends Post {
     private String linkvideo;
 
     public PostMultimediale(LocalDate datapubblicazione, String testodescrittivo, String linkvideo) {

@@ -1,6 +1,8 @@
+package Post;
+
 import java.time.LocalDate;
 
-public class PostDocumentale extends Post{
+public class PostDocumentale extends Post {
     private String idalfanumerico;
     private int dimensionetesto;
     private int dimensionetitolo;

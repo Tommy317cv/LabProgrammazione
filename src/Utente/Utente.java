@@ -1,3 +1,5 @@
+package Utente;
+
 public class Utente {
     //Variabili di classe
     private final String nickname;

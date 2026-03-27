@@ -1,6 +1,8 @@
+package Post;
+
 import java.time.LocalDate;
 
-public class PubblicazioneScientifica extends PostDocumentale{
+public class PubblicazioneScientifica extends PostDocumentale {
     private PubblicazioneScientifica[] altrecitazioni;
 
     public PubblicazioneScientifica(LocalDate datapubblicazione, String testodescrittivo, String idalfanumerico, int dimensionetesto, int dimensionetitolo, int dimensionecitazione, PubblicazioneScientifica[] altrecitazioni) {
