@@ -1,5 +1,7 @@
 package Post;
 
+import Utente.Utente;
+
 import java.time.LocalDate;
 
 public class Evento extends Post {
