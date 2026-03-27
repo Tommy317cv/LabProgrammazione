@@ -1,4 +1,6 @@
-public class Ricercatore extends Utente{
+package Utente;
+
+public class Ricercatore extends Utente {
 
     private int hIndex;
     private String ParolaChiave;

@@ -1,6 +1,8 @@
+package Post;
+
 import java.time.LocalDate;
 
-public class Evento extends Post{
+public class Evento extends Post {
     private LocalDate dataevento;
     private String luogoevento;
     private String descrizioneevento;
