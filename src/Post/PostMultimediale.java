@@ -11,7 +11,7 @@ public class PostMultimediale extends Post {
     }
 
     @Override
-    int calcolaDimensionesTesto() {
+    int calcolaDimensionesPost() {
         return 0;
     }
 }
