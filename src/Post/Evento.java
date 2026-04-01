@@ -10,8 +10,8 @@ public class Evento extends Post {
     private String descrizioneevento;
     private Utente[] listainvitati;
 
-    public Evento(LocalDate datapubblicazione, String testodescrittivo, Utente[] listainvitati, String descrizioneevento, String luogoevento, LocalDate dataevento) {
-        super(datapubblicazione, testodescrittivo);
+    public Evento(String idpost, LocalDate datapubblicazione, String testodescrittivo, Utente[] listainvitati, String descrizioneevento, String luogoevento, LocalDate dataevento) {
+        super(idpost, datapubblicazione, testodescrittivo);
         this.listainvitati = listainvitati;
         this.descrizioneevento = descrizioneevento;
         this.luogoevento = luogoevento;

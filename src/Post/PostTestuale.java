@@ -3,7 +3,7 @@ package Post;
 import java.time.LocalDate;
 
 public class PostTestuale extends Post {
-    public PostTestuale(LocalDate datapubblicazione, String testodescrittivo) {
-        super(datapubblicazione, testodescrittivo);
+    public PostTestuale(String idpost, LocalDate datapubblicazione, String testodescrittivo) {
+        super(idpost, datapubblicazione, testodescrittivo);
     }
 }

@@ -5,8 +5,8 @@ import java.time.LocalDate;
 public class PubblicazioneScientifica extends PostDocumentale {
     private PubblicazioneScientifica[] altrecitazioni;
 
-    public PubblicazioneScientifica(LocalDate datapubblicazione, String testodescrittivo, String idalfanumerico, int dimensionetesto, int dimensionetitolo, int dimensionecitazione, PubblicazioneScientifica[] altrecitazioni) {
-        super(datapubblicazione, testodescrittivo, idalfanumerico, dimensionetesto, dimensionetitolo, dimensionecitazione);
+    public PubblicazioneScientifica(String idpost, LocalDate datapubblicazione, String testodescrittivo, String idalfanumerico, int dimensionetesto, int dimensionetitolo, int dimensionecitazione, PubblicazioneScientifica[] altrecitazioni) {
+        super(idpost, datapubblicazione, testodescrittivo, idalfanumerico, dimensionetesto, dimensionetitolo, dimensionecitazione);
         this.altrecitazioni = altrecitazioni;
     }
 
