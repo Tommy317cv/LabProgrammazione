@@ -9,4 +9,9 @@ public class PostMultimediale extends Post {
         super(idpost, datapubblicazione, testodescrittivo);
         this.linkvideo = linkvideo;
     }
+
+    @Override
+    int calcolaDimensionesTesto() {
+        return 0;
+    }
 }
