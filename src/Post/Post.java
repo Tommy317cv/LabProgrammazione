@@ -19,6 +19,7 @@ public class Post{
     }
 
     public String getTestodescrittivo() {
+
         return testodescrittivo;
     }
 }
