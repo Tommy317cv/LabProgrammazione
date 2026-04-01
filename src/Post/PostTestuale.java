@@ -7,7 +7,7 @@ public class PostTestuale extends Post {
         super(idpost, datapubblicazione, testodescrittivo);
     }
     @Override
-    int calcolaDimensionesTesto() {
+    int calcolaDimensionesPost() {
         return 0;
     }
 }

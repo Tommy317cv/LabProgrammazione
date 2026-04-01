@@ -24,7 +24,17 @@ abstract class Post{
         return testodescrittivo;
     }
 
-    abstract int calcolaDimensionesTesto ();
+
+    public int CalcolaDimensioneTesto()
+    {
+        return 0;
+    }
+
+
+    abstract int calcolaDimensionesPost();
+
+
+
 
     public Utente[] listaUtenti_MiPiace ()
     {
