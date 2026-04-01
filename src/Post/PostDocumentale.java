@@ -16,4 +16,8 @@ public class PostDocumentale extends Post {
         this.dimensionecitazione = dimensionecitazione;
     }
 
+    @Override
+    int calcolaDimensionesTesto() {
+        return 0;
+    }
 }

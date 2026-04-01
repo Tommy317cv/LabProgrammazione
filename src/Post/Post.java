@@ -1,10 +1,12 @@
 package Post;
 
+import Utente.Utente;
+
 import java.time.LocalDate;
 
-public class Post{
+abstract class Post{
     private final String idpost;
-    private LocalDate datapubblicazione;
+    private final LocalDate datapubblicazione;
     private String testodescrittivo;
 
     public Post(String idpost, LocalDate datapubblicazione, String testodescrittivo) {
@@ -22,4 +24,13 @@ public class Post{
 
         return testodescrittivo;
     }
+
+    abstract int calcolaDimensionesTesto ();
+
+    public Utente[] listaUtenti_MiPiace ()
+    {
+        return null;
+    }
+
 }
+

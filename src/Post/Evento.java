@@ -10,12 +10,12 @@ public class Evento extends Post {
     private String descrizioneevento;
     private Utente[] listainvitati;
 
-    public Evento(String idpost, LocalDate datapubblicazione, String testodescrittivo, Utente[] listainvitati, String descrizioneevento, String luogoevento, LocalDate dataevento) {
+    public Evento(String idpost, LocalDate datapubblicazione, String testodescrittivo, LocalDate dataevento, String luogoevento, String descrizioneevento) {
         super(idpost, datapubblicazione, testodescrittivo);
-        this.listainvitati = listainvitati;
-        this.descrizioneevento = descrizioneevento;
-        this.luogoevento = luogoevento;
         this.dataevento = dataevento;
+        this.luogoevento = luogoevento;
+        this.descrizioneevento = descrizioneevento;
+
     }
 
     public void setDataevento(LocalDate dataevento) {
@@ -33,4 +33,10 @@ public class Evento extends Post {
     public void setListainvitati(Utente[] listainvitati) {
         this.listainvitati = listainvitati;
     }
+
+    @Override
+    int calcolaDimensionesTesto() {
+        return 0;
+    }
+
 }
