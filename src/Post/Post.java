@@ -4,10 +4,12 @@ import Utente.Utente;
 
 import java.time.LocalDate;
 
-abstract class Post{
+public abstract class Post{
     private final String idpost;
     private final LocalDate datapubblicazione;
     private String testodescrittivo;
+    private Utente Utente;
+
 
     public Post(String idpost, LocalDate datapubblicazione, String testodescrittivo) {
         this.idpost = idpost;
