@@ -8,4 +8,12 @@ public class Studente extends Utente {
         super(nickname, password, email);
         CorsoLaurea = corsoLaurea;
     }
+
+    public String getCorsoLaurea() {
+        return CorsoLaurea;
+    }
+
+    public void setCorsoLaurea(String corsoLaurea) {
+        CorsoLaurea = corsoLaurea;
+    }
 }
