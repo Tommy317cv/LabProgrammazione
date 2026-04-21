@@ -1,6 +1,8 @@
 package Utente;
 
-public class Influencer extends Ricercatore {
+import Interface.pubblicaEvento;
+
+public class Influencer extends Ricercatore implements pubblicaEvento {
 
 
     private boolean SpuntaBlu;

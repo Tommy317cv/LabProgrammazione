@@ -1,8 +1,10 @@
 package Post;
 
+import Interface.Taggabile;
+
 import java.time.LocalDate;
 
-public class PubblicazioneScientifica extends PostDocumentale {
+public class PubblicazioneScientifica extends PostDocumentale implements Taggabile {
     private PubblicazioneScientifica[] altrecitazioni;
 
     public PubblicazioneScientifica(String idpost, LocalDate datapubblicazione, String testodescrittivo, String idalfanumerico, int dimensionetesto, int dimensionetitolo, int dimensionecitazione, PubblicazioneScientifica[] altrecitazioni) {

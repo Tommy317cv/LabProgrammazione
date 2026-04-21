@@ -1,4 +1,5 @@
+package Interface;
+
 public interface pubblicaEvento {
-    interface Votabile {
-    }
+
 }

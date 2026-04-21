@@ -1,3 +1,5 @@
+package ClassiAppoggio;
+
 public class Corso {
 
     private String nomeCorso;
@@ -6,7 +8,5 @@ public class Corso {
         return nomeCorso;
     }
 
-    public void setNomeCorso(String nomeCorso) {
-        this.nomeCorso = nomeCorso;
-    }
+
 }
