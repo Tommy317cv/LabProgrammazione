@@ -1,9 +1,9 @@
 package Utente;
 import Post.Post;
 
-import ClassiAppoggio.Notifica;
 
-public class Utente {
+
+public abstract class Utente {
     //Variabili di classe
     private final String NICKNAME;
     private String password;

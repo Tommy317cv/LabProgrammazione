@@ -47,4 +47,13 @@ public class Evento extends Post implements Votabile {
         return 0;
     }
 
+    @Override
+    public void addVoto(double voto) {
+
+    }
+
+    @Override
+    public double mediaVoti() {
+        return 0;
+    }
 }

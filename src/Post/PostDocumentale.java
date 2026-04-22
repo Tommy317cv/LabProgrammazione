@@ -10,7 +10,7 @@ public class PostDocumentale extends Post {
 
     public PostDocumentale(String idpost, LocalDate datapubblicazione, String testodescrittivo, String idalfanumerico, int dimensionetesto, int dimensionetitolo, int dimensionecitazione) {
         super(idpost, datapubblicazione, testodescrittivo);
-        this.idalfanumerico = idalfanumerico;
+        this.idAlfanumerico = idalfanumerico;
         this.dimensionetesto = dimensionetesto;
         this.dimensionetitolo = dimensionetitolo;
         this.dimensioneCitazione = dimensionecitazione;
