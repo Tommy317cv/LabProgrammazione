@@ -10,17 +10,22 @@ public abstract class Post{
     private final LocalDate dataPubblicazione;
     private String testoDescrittivo;
     private Utente[] listaLike;
-    private Utente Utente;
+
+    //Relazioni
+
+    private Utente UtenteCreatore; //per relazione
+    private Notifica [] notificaRiferimento; //per relazione
 
     //Costruttore
 
-    public Post(String idpost, LocalDate datapubblicazione, String testodescrittivo) {
+    public Post(String idpost, LocalDate datapubblicazione, String testodescrittivo, Utente UtenteCreatore) {
         this.IDPOST = idpost;
         this.dataPubblicazione = datapubblicazione;
         this.testoDescrittivo = testodescrittivo;
+        this.UtenteCreatore = UtenteCreatore;
     }
 
-    //Getter
+//Getter
 
     public String getTestodescrittivo() {
         return testoDescrittivo;
