@@ -23,4 +23,19 @@ public class PostMultimediale extends Post implements Taggabile {
     int calcolaDimensionesPost() {
         return 0;
     }
+
+    @Override
+    public void addTag(String Tag) {
+
+    }
+
+    @Override
+    public void removeTag(String Remove_Tag) {
+
+    }
+
+    @Override
+    public void getTag() {
+
+    }
 }

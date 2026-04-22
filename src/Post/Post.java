@@ -18,14 +18,13 @@ public abstract class Post{
 
     //Costruttore
 
-    public Post(String idpost, LocalDate datapubblicazione, String testodescrittivo, Utente UtenteCreatore) {
+    public Post(String idpost, LocalDate datapubblicazione, String testodescrittivo) {
         this.IDPOST = idpost;
         this.dataPubblicazione = datapubblicazione;
         this.testoDescrittivo = testodescrittivo;
-        this.UtenteCreatore = UtenteCreatore;
     }
 
-//Getter
+    //Getter
 
     public String getTestodescrittivo() {
         return testoDescrittivo;
@@ -39,7 +38,7 @@ public abstract class Post{
 
     public Utente[] getListaLike() {return listaLike;}
 
-    public Utente getUtente() {return Utente;}
+    public Utente getUtente() {return null;}
 
     //Setter
 

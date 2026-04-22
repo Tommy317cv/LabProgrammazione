@@ -1,5 +1,6 @@
 package Utente;
 import Post.Post;
+import ClassiAppoggio.Notifica;
 
 
 
@@ -11,10 +12,6 @@ public abstract class Utente {
 
     private Utente[] listaFollowers;
     private Utente[] listaSeguiti;
-
-    //Relazioni
-
-    private Post[] postPubblicati; //per relazioni
 
     //Costruttore
 
@@ -32,11 +29,11 @@ public abstract class Utente {
 
     public String getEmail() {return email;}
 
-    public Post[] getPostPubblicati() {return postPubblicati;}
+    public Post[] getPostPubblicati() {return null;}
 
-    public Utente[] getListaFollowers() {return listaFollowers;}
+    public Utente[] getListaFollowers() {return null;}
 
-    public Utente[] getListaSeguiti() {return listaSeguiti;}
+    public Utente[] getListaSeguiti() {return null;}
 
     //Metodi
 

@@ -1,6 +1,13 @@
 package Utente;
 
+import ClassiAppoggio.Corso;
+
 public class Docente extends Utente {
+
+
+    //Relazioni
+
+    private Corso[] CorsiInsegnati;
 
     //Costruttore
 

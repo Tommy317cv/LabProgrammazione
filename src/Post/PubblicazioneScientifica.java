@@ -27,4 +27,19 @@ public class PubblicazioneScientifica extends PostDocumentale implements Taggabi
     public void setAltrecitazioni(PubblicazioneScientifica[] altreCitazioni) {
         this.altreCitazioni = altreCitazioni;
     }
+
+    @Override
+    public void addTag(String Tag) {
+
+    }
+
+    @Override
+    public void removeTag(String Remove_Tag) {
+
+    }
+
+    @Override
+    public void getTag() {
+
+    }
 }

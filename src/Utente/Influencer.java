@@ -1,6 +1,7 @@
 package Utente;
 
 import Interface.pubblicaEvento;
+import Post.Evento;
 
 public class Influencer extends Ricercatore implements pubblicaEvento {
 
@@ -29,5 +30,10 @@ public class Influencer extends Ricercatore implements pubblicaEvento {
     public boolean isspuntaBlu() {
         boolean spuntaBlu = this.spuntaBlu;
         return spuntaBlu;
+    }
+
+    @Override
+    public Evento creaEvento() {
+        return null;
     }
 }
