@@ -2,18 +2,24 @@ package Utente;
 
 public class Studente extends Utente{
 
-    private String CorsoLaurea;
+    private String corsoLaurea;
+
+    //Costruttore
 
     public Studente(String nickname, String password, String email, String corsoLaurea) {
         super(nickname, password, email);
-        CorsoLaurea = corsoLaurea;
+        this.corsoLaurea = corsoLaurea;
     }
 
-    public String getCorsoLaurea() {
-        return CorsoLaurea;
+    //Getter
+
+    public String getcorsoLaurea() {
+        return corsoLaurea;
     }
 
-    public void setCorsoLaurea(String corsoLaurea) {
-        CorsoLaurea = corsoLaurea;
+    //Setter
+
+    public void setcorsoLaurea(String corsoLaurea) {
+        this.corsoLaurea = corsoLaurea;
     }
 }

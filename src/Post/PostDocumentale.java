@@ -4,17 +4,31 @@ import java.time.LocalDate;
 
 public class PostDocumentale extends Post {
     private String idAlfanumerico;
-    private int dimensionetesto;
-    private int dimensionetitolo;
+    private int dimensionePDF;
+    private int dimensioneTitolo;
     private int dimensioneCitazione;
 
-    public PostDocumentale(String idpost, LocalDate datapubblicazione, String testodescrittivo, String idalfanumerico, int dimensionetesto, int dimensionetitolo, int dimensionecitazione) {
+    //Costruttore
+
+    public PostDocumentale(String idpost, LocalDate datapubblicazione, String testodescrittivo, String idalfanumerico, int dimensionePDF, int dimensioneTitolo, int dimensioneCitazione) {
         super(idpost, datapubblicazione, testodescrittivo);
-        this.idalfanumerico = idalfanumerico;
-        this.dimensionetesto = dimensionetesto;
-        this.dimensionetitolo = dimensionetitolo;
-        this.dimensioneCitazione = dimensionecitazione;
+        this.idAlfanumerico = idalfanumerico;
+        this.dimensionePDF = dimensionePDF;
+        this.dimensioneTitolo = dimensioneTitolo;
+        this.dimensioneCitazione = dimensioneCitazione;
     }
+
+    //Getter
+
+    public String getIdAlfanumerico() {return idAlfanumerico;}
+
+    public int getDimensionePDF() {return dimensionePDF;}
+
+    public int getDimensioneTitolo() {return dimensioneTitolo;}
+
+    public int getDimensioneCitazione() {return dimensioneCitazione;}
+
+    //Metodi
 
     @Override
     int calcolaDimensionesPost() {

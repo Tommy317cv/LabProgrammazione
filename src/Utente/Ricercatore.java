@@ -3,27 +3,33 @@ package Utente;
 public class Ricercatore extends Utente {
 
     private int hIndex;
-    private String parolaChiave;
+    private String paroleChiave;
 
-    public Ricercatore(String nickname, String password, String email, int hIndex, String parolaChiave) {
+    //Costruttore
+
+    public Ricercatore(String nickname, String password, String email, int hIndex, String paroleChiave) {
         super(nickname, password, email);
         this.hIndex = hIndex;
-        ParolaChiave = parolaChiave;
+        paroleChiave = paroleChiave;
     }
+
+    //Getter
 
     public int gethIndex() {
         return hIndex;
     }
 
-    public String getParolaChiave() {
-        return ParolaChiave;
+    public String getparolaChiave() {
+        return paroleChiave;
     }
+
+    //Setter
 
     public void sethIndex(int hIndex) {
         this.hIndex = hIndex;
     }
 
-    public void setParolaChiave(String parolaChiave) {
-        ParolaChiave = parolaChiave;
+    public void setparolaChiave(String parolaChiave) {
+        paroleChiave = parolaChiave;
     }
 }
