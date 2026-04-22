@@ -11,9 +11,9 @@ public class PostDocumentale extends Post {
     public PostDocumentale(String idpost, LocalDate datapubblicazione, String testodescrittivo, String idalfanumerico, int dimensionetesto, int dimensionetitolo, int dimensionecitazione) {
         super(idpost, datapubblicazione, testodescrittivo);
         this.idAlfanumerico = idalfanumerico;
-        this.dimensionetesto = dimensionetesto;
-        this.dimensionetitolo = dimensionetitolo;
-        this.dimensioneCitazione = dimensionecitazione;
+        this.dimensionePDF = dimensionePDF;
+        this.dimensioneTitolo = dimensioneTitolo;
+        this.dimensioneCitazione = dimensioneCitazione;
     }
 
     @Override

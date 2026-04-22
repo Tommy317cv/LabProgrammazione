@@ -11,6 +11,8 @@ public class Evento extends Post implements Votabile {
     private String descrizioneEvento;
     private Utente[] listaInvitati;
 
+    //Costruttore
+
     public Evento(String idpost, LocalDate datapubblicazione, String testodescrittivo, LocalDate dataevento, String luogoEvento, String descrizioneevento) {
         super(idpost, datapubblicazione, testodescrittivo);
         this.dataEvento = dataevento;
@@ -33,6 +35,7 @@ public class Evento extends Post implements Votabile {
         return descrizioneEvento;
     }
 
+    public Utente[] getListaInvitati() {return listaInvitati;}
     //Setter
 
     public void setListaInvitati(Utente[] listaInvitati) {

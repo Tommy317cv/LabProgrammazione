@@ -5,20 +5,26 @@ import Interface.Taggabile;
 import java.time.LocalDate;
 
 public class PubblicazioneScientifica extends PostDocumentale implements Taggabile {
-    private PubblicazioneScientifica[] altrecitazioni;
+    private PubblicazioneScientifica[] altreCitazioni;
 
-    public PubblicazioneScientifica(String idpost, LocalDate datapubblicazione, String testodescrittivo, String idalfanumerico, int dimensionetesto, int dimensionetitolo, int dimensionecitazione, PubblicazioneScientifica[] altrecitazioni) {
+    //Costruttore
+
+    public PubblicazioneScientifica(String idpost, LocalDate datapubblicazione, String testodescrittivo, String idalfanumerico, int dimensionetesto, int dimensionetitolo, int dimensionecitazione, PubblicazioneScientifica[] altreCitazioni) {
         super(idpost, datapubblicazione, testodescrittivo, idalfanumerico, dimensionetesto, dimensionetitolo, dimensionecitazione);
-        this.altrecitazioni = altrecitazioni;
+        this.altreCitazioni = altreCitazioni;
     }
 
-    public void setAltrecitazioni(PubblicazioneScientifica[] altrecitazioni) {
-        this.altrecitazioni = altrecitazioni;
-    }
+    //Getter
 
     public PubblicazioneScientifica[] getAltrecitazioni() {
-        return altrecitazioni;
+        return altreCitazioni;
     }
 
+    public PubblicazioneScientifica[] getAltreCitazioni() {return altreCitazioni;}
 
+    //Setter
+
+    public void setAltrecitazioni(PubblicazioneScientifica[] altreCitazioni) {
+        this.altreCitazioni = altreCitazioni;
+    }
 }
