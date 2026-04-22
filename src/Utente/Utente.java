@@ -8,9 +8,13 @@ public abstract class Utente {
     private final String NICKNAME;
     private String password;
     private String email;
-    private Post[] postPubblicati;
+
     private Utente[] listaFollowers;
     private Utente[] listaSeguiti;
+
+    //Relazioni
+
+    private Post[] postPubblicati; //per relazioni
 
     //Costruttore
 
