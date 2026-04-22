@@ -3,7 +3,7 @@ package Utente;
 public class Ricercatore extends Utente {
 
     private int hIndex;
-    private String ParolaChiave;
+    private String parolaChiave;
 
     public Ricercatore(String nickname, String password, String email, int hIndex, String parolaChiave) {
         super(nickname, password, email);
