@@ -1,38 +1,46 @@
 package Post;
 
+import Interface.Votabile;
 import Utente.Utente;
 
 import java.time.LocalDate;
 
-public class Evento extends Post {
-    private LocalDate dataevento;
-    private String luogoevento;
-    private String descrizioneevento;
-    private Utente[] listainvitati;
+public class Evento extends Post implements Votabile {
+    private LocalDate dataEvento;
+    private String luogoEvento;
+    private String descrizioneEvento;
+    private Utente[] listaInvitati;
 
-    public Evento(String idpost, LocalDate datapubblicazione, String testodescrittivo, LocalDate dataevento, String luogoevento, String descrizioneevento) {
+    public Evento(String idpost, LocalDate datapubblicazione, String testodescrittivo, LocalDate dataevento, String luogoEvento, String descrizioneevento) {
         super(idpost, datapubblicazione, testodescrittivo);
-        this.dataevento = dataevento;
-        this.luogoevento = luogoevento;
-        this.descrizioneevento = descrizioneevento;
+        this.dataEvento = dataevento;
+        this.luogoEvento = luogoEvento;
+        this.descrizioneEvento = descrizioneevento;
 
     }
 
-    public void setDataevento(LocalDate dataevento) {
-        this.dataevento = dataevento;
+    //Getter
+
+    public LocalDate getDataEvento() {
+        return dataEvento;
     }
 
-    public void setLuogoevento(String luogoevento) {
-        this.luogoevento = luogoevento;
+    public String getLuogoEvento() {
+        return luogoEvento;
     }
 
-    public void setDescrizioneevento(String descrizioneevento) {
-        this.descrizioneevento = descrizioneevento;
+    public String getDescrizioneEvento() {
+        return descrizioneEvento;
     }
 
-    public void setListainvitati(Utente[] listainvitati) {
-        this.listainvitati = listainvitati;
+    //Setter
+
+    public void setListaInvitati(Utente[] listaInvitati) {
+        this.listaInvitati = listaInvitati;
     }
+
+
+    //Metodi
 
     @Override
     int calcolaDimensionesPost() {

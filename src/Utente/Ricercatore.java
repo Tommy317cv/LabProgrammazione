@@ -10,4 +10,20 @@ public class Ricercatore extends Utente {
         this.hIndex = hIndex;
         ParolaChiave = parolaChiave;
     }
+
+    public int gethIndex() {
+        return hIndex;
+    }
+
+    public String getParolaChiave() {
+        return ParolaChiave;
+    }
+
+    public void sethIndex(int hIndex) {
+        this.hIndex = hIndex;
+    }
+
+    public void setParolaChiave(String parolaChiave) {
+        ParolaChiave = parolaChiave;
+    }
 }
