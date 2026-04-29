@@ -3,9 +3,17 @@ import Post.Post;
 import ClassiAppoggio.Notifica;
 
 
-
+/**
+ * Creazione di un generico utente all'interno di 'Supsibook'.
+ * .
+ * La classe Utente permette di generare nuovi utenti, i quali hanno come variabili
+ * personali: nickname, password e email.
+ * Essendo una classe astratta non è istanziabile ma permette l'estensione dei suoi attributi e
+ * dei suoi metodi alle diverse sottoclassi.
+ */
 public abstract class Utente {
     //Variabili di classe
+
     private final String NICKNAME;
     private String password;
     private String email;
@@ -27,10 +35,6 @@ public abstract class Utente {
         this.password = password;
         this.email = email;
     }
-
-
-
-
 
     //Getter
 
