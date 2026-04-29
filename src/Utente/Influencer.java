@@ -3,6 +3,9 @@ package Utente;
 import Interface.pubblicaEvento;
 import Post.Evento;
 
+/**
+ * Creazione di una sottoclasse di 'Utente': 'Riceractore'.
+ */
 public class Influencer extends Ricercatore implements pubblicaEvento {
 
 
