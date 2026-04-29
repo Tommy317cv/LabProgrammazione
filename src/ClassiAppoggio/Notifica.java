@@ -1,17 +1,20 @@
 package ClassiAppoggio;
 
 import Post.Post;
+import Utente.Utente;
 
 public class Notifica {
 
     private boolean notificaVista;
     private Post postRiferimento;
+    private Utente utenteACuiInviare;
 
     //Costruttore
 
-    public Notifica(boolean notificaVista, Post postRiferimento) {
+    public Notifica(boolean notificaVista, Post postRiferimento, Utente utenteACuiInviare) {
         this.notificaVista = notificaVista;
         this.postRiferimento = postRiferimento;
+        this.utenteACuiInviare = utenteACuiInviare;
     }
 
    //Getter

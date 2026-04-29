@@ -13,13 +13,19 @@ public class Evento extends Post implements Votabile {
 
     //Costruttore
 
-    public Evento(String idpost, LocalDate datapubblicazione, String testodescrittivo, LocalDate dataevento, String luogoEvento, String descrizioneevento) {
-        super(idpost, datapubblicazione, testodescrittivo);
+    public Evento(String idpost, LocalDate datapubblicazione, String testodescrittivo, Utente utentecreatore, LocalDate dataevento, String luogoEvento, String descrizioneevento, int NumerolistaInvitati) {
+        super(idpost, datapubblicazione, testodescrittivo, utentecreatore);
         this.dataEvento = dataevento;
         this.luogoEvento = luogoEvento;
         this.descrizioneEvento = descrizioneevento;
+        this.listaInvitati = new Utente[NumerolistaInvitati];
 
     }
+
+
+
+
+
 
     //Getter
 

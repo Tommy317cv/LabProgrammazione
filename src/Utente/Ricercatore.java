@@ -10,7 +10,7 @@ public class Ricercatore extends Utente {
     public Ricercatore(String nickname, String password, String email, int hIndex, String paroleChiave) {
         super(nickname, password, email);
         this.hIndex = hIndex;
-        paroleChiave = paroleChiave;
+        this.paroleChiave = paroleChiave;
     }
 
     //Getter

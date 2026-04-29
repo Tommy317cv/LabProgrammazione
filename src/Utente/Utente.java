@@ -13,6 +13,10 @@ public abstract class Utente {
     private Utente[] listaFollowers;
     private Utente[] listaSeguiti;
 
+    //Relazioni
+
+    private Post [] PostUtente;
+    private Notifica [] NotificheUtente;
     //Costruttore
 
     public Utente(String nickname, String password, String email) {
@@ -20,6 +24,10 @@ public abstract class Utente {
         this.password = password;
         this.email = email;
     }
+
+
+
+
 
     //Getter
 

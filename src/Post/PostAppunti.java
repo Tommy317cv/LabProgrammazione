@@ -3,6 +3,7 @@ package Post;
 import Interface.Votabile;
 import Interface.pubblicaEvento;
 import Utente.Studente;
+import Utente.Utente;
 
 import java.time.LocalDate;
 
@@ -10,12 +11,14 @@ public class PostAppunti extends PostDocumentale implements Votabile, pubblicaEv
 
     private Studente[] utentiAbilitatiVisualizzare;
 
-    public PostAppunti(String idpost, LocalDate datapubblicazione, String testodescrittivo, String idalfanumerico, int dimensionetesto, int dimensionetitolo, int dimensionecitazione, Studente[] utentiAbilitatiVisualizzare) {
-        super(idpost, datapubblicazione, testodescrittivo, idalfanumerico, dimensionetesto, dimensionetitolo, dimensionecitazione);
-        this.utentiAbilitatiVisualizzare = utentiAbilitatiVisualizzare;
+    public PostAppunti(String idpost, LocalDate datapubblicazione, String testodescrittivo, Utente utentecreatore, String idAlfanumerico, String Titolo, String Citazione, int dimensionePDF, int NumeroUtentiAbilitatiVisualizzare) {
+        super(idpost, datapubblicazione, testodescrittivo, utentecreatore, idAlfanumerico, Titolo, Citazione, dimensionePDF);
+        this.utentiAbilitatiVisualizzare = new Studente[NumeroUtentiAbilitatiVisualizzare];
     }
 
-    //Getter
+
+
+//Getter
 
     public Studente[] getUtentiAbilitatiVisualizzare() {
         return utentiAbilitatiVisualizzare;

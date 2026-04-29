@@ -1,24 +1,46 @@
 package Post;
 
+import Utente.Utente;
+
 import java.time.LocalDate;
 
 public class PostDocumentale extends Post {
     private String idAlfanumerico;
-    private int dimensionetesto;
-    private int dimensioneTitolo;
-    private int dimensioneCitazione;
+    private String Titolo;
+    private String Citazione;
     private int dimensionePDF;
 
-    public PostDocumentale(String idpost, LocalDate datapubblicazione, String testodescrittivo, String idalfanumerico, int dimensionetesto, int dimensionetitolo, int dimensionecitazione) {
-        super(idpost, datapubblicazione, testodescrittivo);
-        this.idAlfanumerico = idalfanumerico;
+    //Costruttore
+
+    public PostDocumentale(String idpost, LocalDate datapubblicazione, String testodescrittivo, Utente utentecreatore, String idAlfanumerico, String Titolo, String Citazione, int dimensionePDF) {
+        super(idpost, datapubblicazione, testodescrittivo, utentecreatore);
+        this.idAlfanumerico = idAlfanumerico;
+        this.Titolo = Titolo;
+        this.Citazione = Citazione;
         this.dimensionePDF = dimensionePDF;
-        this.dimensioneTitolo = dimensioneTitolo;
-        this.dimensioneCitazione = dimensioneCitazione;
     }
+
+    //Getter
+
+    public String getIdAlfanumerico() {return idAlfanumerico;}
+    public String getTitolo() {return Titolo;}
+    public String getCitazione() {return Citazione;}
+    public int getDimensionePDF() {return dimensionePDF;}
+
+    //Setter
+
+    public void setDimensionePDF(int dimensionePDF) {this.dimensionePDF = dimensionePDF;}
+    public void setCitazione(String citazione) {Citazione = citazione;}
+    public void setTitolo(String titolo) {Titolo = titolo;}
+    public void setIdAlfanumerico(String idAlfanumerico) {this.idAlfanumerico = idAlfanumerico;}
+
+
+    //Metodi
 
     @Override
     int calcolaDimensionesPost() {
         return 0;
     }
 }
+
+

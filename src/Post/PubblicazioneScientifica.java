@@ -1,6 +1,7 @@
 package Post;
 
 import Interface.Taggabile;
+import Utente.Utente;
 
 import java.time.LocalDate;
 
@@ -8,11 +9,11 @@ public class PubblicazioneScientifica extends PostDocumentale implements Taggabi
     private PubblicazioneScientifica[] altreCitazioni;
 
     //Costruttore
-
-    public PubblicazioneScientifica(String idpost, LocalDate datapubblicazione, String testodescrittivo, String idalfanumerico, int dimensionetesto, int dimensionetitolo, int dimensionecitazione, PubblicazioneScientifica[] altreCitazioni) {
-        super(idpost, datapubblicazione, testodescrittivo, idalfanumerico, dimensionetesto, dimensionetitolo, dimensionecitazione);
-        this.altreCitazioni = altreCitazioni;
+    public PubblicazioneScientifica(String idpost, LocalDate datapubblicazione, String testodescrittivo, Utente utentecreatore, String idAlfanumerico,  String Titolo, String Citazione, int dimensionePDF, int NumeroPubblicazioniScientifiche) {
+        super(idpost, datapubblicazione, testodescrittivo, utentecreatore, idAlfanumerico, Titolo, Citazione, dimensionePDF);
+    this.altreCitazioni = new PubblicazioneScientifica[NumeroPubblicazioniScientifiche];
     }
+
 
     //Getter
 

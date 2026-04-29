@@ -18,10 +18,11 @@ public abstract class Post{
 
     //Costruttore
 
-    public Post(String idpost, LocalDate datapubblicazione, String testodescrittivo) {
+    public Post(String idpost, LocalDate datapubblicazione, String testodescrittivo, Utente utentecreatore) {
         this.IDPOST = idpost;
         this.dataPubblicazione = datapubblicazione;
         this.testoDescrittivo = testodescrittivo;
+        this.UtenteCreatore = utentecreatore;
     }
 
     //Getter
