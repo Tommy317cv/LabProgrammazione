@@ -32,4 +32,9 @@ public class Ricercatore extends Utente {
     public void setparolaChiave(String parolaChiave) {
         paroleChiave = parolaChiave;
     }
+
+    //Metodi
+
+    public void AddParolaChiave(String ParolaChiaveDaAggiugnere) {}
+
 }

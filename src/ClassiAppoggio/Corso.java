@@ -15,10 +15,11 @@ public class Corso {
     private Studente[] StudentiChePartecipaAlCorso;
     //Costruttore
 
-    public Corso(String nomeCorso, Docente docentePerCorso, DocenteRicercatore docenteRicercatorePerCorso) {
+    public Corso(String nomeCorso, Docente docentePerCorso, DocenteRicercatore docenteRicercatorePerCorso, Studente Studente1) {
         this.nomeCorso = nomeCorso;
-        DocentePerCorso = docentePerCorso;
-        DocenteRicercatorePerCorso = docenteRicercatorePerCorso;
+        this.DocentePerCorso = docentePerCorso;
+        this.DocenteRicercatorePerCorso = docenteRicercatorePerCorso;
+        Studente1 = StudentiChePartecipaAlCorso[0];
     }
 
 

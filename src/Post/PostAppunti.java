@@ -14,7 +14,7 @@ public class PostAppunti extends PostDocumentale implements Votabile, pubblicaEv
     //Costruttore
 
     public PostAppunti(String idpost, LocalDate datapubblicazione, String testodescrittivo, Utente utentecreatore, String idAlfanumerico, String Titolo, String Citazione, int dimensionePDF, int NumeroUtentiAbilitatiVisualizzare) {
-        super(idpost, datapubblicazione, testodescrittivo, utentecreatore, idAlfanumerico, Titolo, Citazione, dimensionePDF);
+        super(idpost, datapubblicazione, testodescrittivo, utentecreatore, idAlfanumerico, Titolo, dimensionePDF);
         this.utentiAbilitatiVisualizzare = new Studente[NumeroUtentiAbilitatiVisualizzare];
     }
 

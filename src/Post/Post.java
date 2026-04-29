@@ -9,13 +9,13 @@ public abstract class Post{
     private final String IDPOST;
     private final LocalDate dataPubblicazione;
     private String testoDescrittivo;
-    private Utente[] listaLike;
+
 
     //Relazioni
 
     private Utente UtenteCreatore; //per relazione
     private Notifica [] notificaRiferimento; //per relazione
-
+    private Utente[] listaLike;
     //Costruttore
 
     public Post(String idpost, LocalDate datapubblicazione, String testodescrittivo, Utente utentecreatore) {

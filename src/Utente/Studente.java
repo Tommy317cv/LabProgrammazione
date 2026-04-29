@@ -1,14 +1,16 @@
 package Utente;
 
 import ClassiAppoggio.Corso;
+import Post.PostAppunti;
 
-public class Studente extends Utente{
+public class Studente extends Utente {
 
     private String corsoLaurea;
 
     //Relazione
 
     private Corso[] CorsiSeguiti;
+    private PostAppunti[] VisualizzaPostAppunti;
 
 
     //Costruttore

@@ -10,7 +10,7 @@ public class PubblicazioneScientifica extends PostDocumentale implements Taggabi
 
     //Costruttore
     public PubblicazioneScientifica(String idpost, LocalDate datapubblicazione, String testodescrittivo, Utente utentecreatore, String idAlfanumerico,  String Titolo, String Citazione, int dimensionePDF, int NumeroPubblicazioniScientifiche) {
-        super(idpost, datapubblicazione, testodescrittivo, utentecreatore, idAlfanumerico, Titolo, Citazione, dimensionePDF);
+        super(idpost, datapubblicazione, testodescrittivo, utentecreatore, idAlfanumerico, Titolo, dimensionePDF);
     this.altreCitazioni = new PubblicazioneScientifica[NumeroPubblicazioniScientifiche];
     }
 

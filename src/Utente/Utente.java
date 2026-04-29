@@ -10,13 +10,16 @@ public abstract class Utente {
     private String password;
     private String email;
 
-    private Utente[] listaFollowers;
-    private Utente[] listaSeguiti;
+
 
     //Relazioni
 
     private Post [] PostUtente;
+    private Utente[] listaFollowers;
+    private Utente[] listaSeguiti;
     private Notifica [] NotificheUtente;
+    private Post[] PostMessoLike;
+    private boolean InvitatoEvento;
     //Costruttore
 
     public Utente(String nickname, String password, String email) {
