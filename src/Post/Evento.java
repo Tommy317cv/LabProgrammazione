@@ -24,9 +24,6 @@ public class Evento extends Post implements Votabile {
 
 
 
-
-
-
     //Getter
 
     public LocalDate getDataEvento() {
