@@ -6,6 +6,9 @@ import Utente.Utente;
 public class Notifica {
 
     private boolean notificaVista;
+
+    //Relazioni
+
     private Post postRiferimento;
     private Utente utenteACuiInviare;
 
@@ -22,12 +25,12 @@ public class Notifica {
     public Post getPostRiferimento() {
         return postRiferimento;
     }
-
-    //Metodi
-
-    public void segnaVisualizzata() {}
     public boolean isNotificaVista() {
         return notificaVista;
     }
+    //Metodi
+
+    public void segnaVisualizzata() {}
+
 }
 

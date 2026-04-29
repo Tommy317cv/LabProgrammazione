@@ -29,6 +29,8 @@ public class PubblicazioneScientifica extends PostDocumentale implements Taggabi
         this.altreCitazioni = altreCitazioni;
     }
 
+    //Metodi
+
     @Override
     public void addTag(String Tag) {
 

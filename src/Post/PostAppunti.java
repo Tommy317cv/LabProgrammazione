@@ -11,11 +11,12 @@ public class PostAppunti extends PostDocumentale implements Votabile, pubblicaEv
 
     private Studente[] utentiAbilitatiVisualizzare;
 
+    //Costruttore
+
     public PostAppunti(String idpost, LocalDate datapubblicazione, String testodescrittivo, Utente utentecreatore, String idAlfanumerico, String Titolo, String Citazione, int dimensionePDF, int NumeroUtentiAbilitatiVisualizzare) {
         super(idpost, datapubblicazione, testodescrittivo, utentecreatore, idAlfanumerico, Titolo, Citazione, dimensionePDF);
         this.utentiAbilitatiVisualizzare = new Studente[NumeroUtentiAbilitatiVisualizzare];
     }
-
 
 
 //Getter
@@ -23,6 +24,8 @@ public class PostAppunti extends PostDocumentale implements Votabile, pubblicaEv
     public Studente[] getUtentiAbilitatiVisualizzare() {
         return utentiAbilitatiVisualizzare;
     }
+
+    //Metodi
 
     @Override
     public Evento creaEvento() {
