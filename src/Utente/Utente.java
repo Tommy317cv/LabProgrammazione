@@ -6,8 +6,8 @@ import ClassiAppoggio.Notifica;
 /**
  * Creazione di un generico utente all'interno di 'Supsibook'.
  * .
- * La classe Utente permette di generare nuovi utenti, i quali hanno come variabili
- * personali: nickname, password e email.
+ * La classe Utente permette di generare nuovi utenti, i quali hanno come variabili personali: nickname,password e email;
+ * e come metodi: seguireUtente, smettiSeguireUtente, aggiungiFollower, rimuoviFollower, addPost e notificaVisualizzata.
  * Essendo una classe astratta non è istanziabile ma permette l'estensione dei suoi attributi e
  * dei suoi metodi alle diverse sottoclassi.
  */

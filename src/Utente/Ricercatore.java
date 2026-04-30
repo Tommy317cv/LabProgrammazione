@@ -1,7 +1,6 @@
 package Utente;
 
 /**
-
  * Creazione di una sottoclasse di 'Utente': 'Riceractore'.
  * .
  * La classe 'Ricercatore' è un'estensione della classe 'Utente' ma oltre agli attributi acquisiti,
