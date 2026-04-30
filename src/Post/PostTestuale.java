@@ -6,7 +6,7 @@ import java.time.LocalDate;
 
 /**
  * Creazione di una sottoclasse di 'Post': 'PostTestuale'.
- * .
+ * ..
  * La classe 'PostTestuale' è un'estensione della classe 'Post' che non aggiunge ulteriori metodi e attributi.
  */
 public class PostTestuale extends Post {

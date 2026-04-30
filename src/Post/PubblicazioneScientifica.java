@@ -7,7 +7,7 @@ import java.time.LocalDate;
 
 /**
  * Creazione di una sottoclasse di 'PostDocumentale': 'PubblicazioneScientifica'.
- * .
+ * ..
  * La classe 'PubblicazioneScientifica' è un'estensione della classe 'PostDocumentale' che a sua volta è un'estensione
  * della classe 'Post'; ma oltre agli attributi acquisiti, aggiunge anche l'attributo: altreCitazioni.
  * La classe 'PubblicazioneScientifica' ha una relazione con se stessa, una PubblicazioneScientifica può citare

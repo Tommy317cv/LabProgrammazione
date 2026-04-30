@@ -7,7 +7,7 @@ import java.time.LocalDate;
 
 /**
  * Aggiunta di un post da parte di un utente all'interno di 'Supsibook'.
- * .
+ * ..
  * La classe Post permette di creare nuovi post con le variabili: idpost, datapubblicazione e testodescrittivo;
  * e che implementa i seguenti metodi: aggiungiLike, rimuoviLike, calcolaDimensioneTesto, calcolaDimensionePost,
  * creaNotifica.

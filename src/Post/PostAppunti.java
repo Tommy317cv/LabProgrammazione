@@ -9,7 +9,7 @@ import java.time.LocalDate;
 
 /**
  * Creazione di una sottoclasse di 'PostDocumentale': 'PostAppunti'.
- * .
+ * ..
  * La classe 'PostAppunti' è un'estensione della classe 'PostDocumentale' che a sua volta è un'estensione
  * della classe 'Post'; ma oltre agli attributi acquisiti, aggiunge anche l'attributo: utentiAbilitatiVisualizzare.
  * 'PostAppunti' implementa un'interfaccia 'Votabile', prendendo i suoi metodi.

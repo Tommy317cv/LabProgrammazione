@@ -7,7 +7,7 @@ import java.time.LocalDate;
 
 /**
  * Creazione di una sottoclasse di 'Post': 'Evento'.
- * .
+ * ..
  * La classe 'Evento' è un'estensione della classe 'Post' e oltre agli attributi acquisiti, aggiunge
  * anche gli attributi: dataEvento, luogoEvento, descrizioneEvento e listaInvitati; e un metodo: addInvitati
  * 'Evento' implementa un'interfaccia 'Taggabile', prendendo il suo metodo.
