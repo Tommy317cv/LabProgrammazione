@@ -5,7 +5,7 @@ import Utente.Utente;
 
 import java.time.LocalDate;
 
-/*
+/**
  * Creazione di una sottoclasse di 'Post': 'Evento'.
  * ..
  * La classe 'Evento' è un'estensione della classe 'Post' e oltre agli attributi acquisiti, aggiunge

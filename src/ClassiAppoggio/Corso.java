@@ -4,7 +4,7 @@ import Utente.Docente;
 import Utente.DocenteRicercatore;
 import Utente.Studente;
 
- /*
+ /**
  * Creazione di un generico corso di laurea.
  * ..
  * La classe 'Corso' permette di creare nuovi corsi con la variabile: nomeCorso;

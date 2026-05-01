@@ -3,7 +3,7 @@ package ClassiAppoggio;
 import Post.Post;
 import Utente.Utente;
 
-/*
+/**
  * Creazione di una generica notifica.
  * ..
  * La classe 'Notifica' permette di creare notifiche con la variabile: notificaVista; implementando

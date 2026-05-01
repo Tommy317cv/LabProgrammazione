@@ -10,6 +10,11 @@ import ClassiAppoggio.Notifica;
  * personali: nickname, password e email.
  * Essendo una classe astratta non è istanziabile ma permette l'estensione dei suoi attributi e
  * dei suoi metodi alle diverse sottoclassi.
+ * 'Utente' ha due relazioni con la classe 'Post': un utente può creare zero o più post,
+ * zero o più utenti possono mettere like a zero o più post.
+ * 'Utente' ha una relazione con la classe 'Notifica': un utente può inviare zero o più notifiche.
+ * 'Utente ha una relazione con la clesse 'Evento': zero o più utenti possono essere invitati a zero o un evento.
+ * Infine presenta anche una relazione con se stesso: zero o più utenti seguono zero o più altri utenti.
  */
 public abstract class Utente {
     //Variabili di classe

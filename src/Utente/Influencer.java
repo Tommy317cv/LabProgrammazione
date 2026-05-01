@@ -4,7 +4,11 @@ import Interface.pubblicaEvento;
 import Post.Evento;
 
 /**
- * Creazione di una sottoclasse di 'Utente': 'Riceractore'.
+ *Creazione di una sottoclasse di 'Ricercatore': 'Influencer'.
+ * .
+ * La classe 'Influencer' è un'estensione della classe 'Ricercatore' che a sua volta è un'estensione
+ * della classe 'Utente', aggiunge anche un attributo: suntaBlu.
+ * La classe 'Influencer' implementa un'interfaccia 'pubblicaEvento', prendendo i suoi metodi.
  */
 public class Influencer extends Ricercatore implements pubblicaEvento {
 

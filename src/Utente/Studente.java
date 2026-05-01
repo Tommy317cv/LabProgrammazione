@@ -11,7 +11,7 @@ import Post.PostAppunti;
  * aggiunge anche l'attributo: corsoLaurea.
  * 'Studente' ha una relazione con la classe 'Corso', uno o più studenti possono partecipare a zero o più corsi;
  * presenta anche un collegamento con la classe 'PostAppunti', zero o più studenti possono
- * visualizzare zero o più post.
+ * visualizzare zero o più postAppunti.
  * 'Studente' implementa un'interfaccia 'pubblicaPostAppunti', prendendo i suoi metodi.
  */
 

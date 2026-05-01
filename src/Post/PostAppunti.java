@@ -7,7 +7,7 @@ import Utente.Utente;
 
 import java.time.LocalDate;
 
- /*
+ /**
  * Creazione di una sottoclasse di 'PostDocumentale': 'PostAppunti'.
  * ..
  * La classe 'PostAppunti' è un'estensione della classe 'PostDocumentale' che a sua volta è un'estensione

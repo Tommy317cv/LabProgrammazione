@@ -1,5 +1,11 @@
 package Utente;
-
+/**
+ * Creazione di una sottoclasse di 'Utente': 'Ricercatore'.
+ * .
+ * La classe 'Ricercatore' è un'estensione della classe 'Utente' ma oltre agli attributi acquisiti,
+ * aggiunge anche gli attributi: hIndex e paroleChiave.
+ * La classe 'Ricercatore' aggiunge anche il metodo: addParolaChiave.
+ */
 public class Ricercatore extends Utente {
 
     private int hIndex;

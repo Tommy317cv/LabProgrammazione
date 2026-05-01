@@ -5,15 +5,18 @@ import Utente.Utente;
 
 import java.time.LocalDate;
 
- /*
- * Aggiunta di un post da parte di un utente all'interno di 'Supsibook'.
- * ..
- * La classe 'Post' permette di creare nuovi post con le variabili: idpost, datapubblicazione e testodescrittivo;
- * e che implementa i seguenti metodi: aggiungiLike, rimuoviLike, calcolaDimensioneTesto, calcolaDimensionePost,
- * creaNotifica.
- * Questa è una classe astratta che dunque  non è istanziabile ma permette l'estensione dei suoi attributi e
- * dei suoi metodi alle diverse sottoclassi.
- */
+ /**
+  * Aggiunta di un post da parte di un utente all'interno di 'Supsibook'.
+  * .
+  * La classe 'Post' permette di creare nuovi post con le variabili: idpost, datapubblicazione e testodescrittivo;
+  * e che implementa i seguenti metodi: aggiungiLike, rimuoviLike, calcolaDimensioneTesto, calcolaDimensionePost,
+  * creaNotifica.
+  * Questa è una classe astratta che dunque  non è istanziabile ma permette l'estensione dei suoi attributi e
+  * dei suoi metodi alle diverse sottoclassi.
+  * 'Post' ha due relazioni con la classe 'Utente': un utente può creare zero o più post,
+  * zero o più utenti possono mettere like a zero o più post.
+  * 'Post' ha una relazione con la classe 'Notifica': un post può avere zero o più notifiche.
+  */
 
 
 public abstract class Post{
