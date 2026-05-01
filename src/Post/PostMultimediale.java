@@ -5,6 +5,15 @@ import Utente.Utente;
 
 import java.time.LocalDate;
 
+/*
+ * Creazione di una sottoclasse di 'Post': 'PostMultimediale'.
+ * ..
+ * La classe 'PostMultimediale' è un'estensione della classe 'Post' e oltre agli attributi acquisiti, aggiunge
+ * anche l'attributo: linkVideo.
+ * 'PostMultimediale' implementa un'interfaccia 'Taggabile', prendendo il suo metodo.
+ */
+
+
 public class PostMultimediale extends Post implements Taggabile {
     private String linkVideo;
 

@@ -4,6 +4,16 @@ import Utente.Utente;
 
 import java.time.LocalDate;
 
+/**
+ * Creazione di una sottoclasse di 'Post': 'PostDocumentale'.
+ * ..
+ * La classe 'PostDocumentale' è un'estensione della classe 'Post' ma oltre agli attributi acquisiti,
+ * aggiunge anche gli attributi: hidAlfanumerico, dimensionePdf, titolo e citazioni; e il metodo: addCitazione.
+ * La classe 'PostDocumentale' permette l'estensione dei suoi attributi e dei suoi metodi alle diverse
+ * sottoclassi: PubblicazioneScientifica e PostAppunti.
+ * La classe 'PostDocumentale' ha una relazione con se stessa, un 'PostDocumentale' può citare zero o più altri 'PostDocumentali'.
+ */
+
 
 
 public class PostDocumentale extends Post {

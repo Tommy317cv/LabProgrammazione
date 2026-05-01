@@ -14,6 +14,7 @@ import Post.PostAppunti;
  * visualizzare zero o più post.
  * 'Studente' implementa un'interfaccia 'pubblicaPostAppunti', prendendo i suoi metodi.
  */
+
 public class Studente extends Utente implements pubblicaPostAppunti {
 
     private String corsoLaurea;
@@ -40,5 +41,15 @@ public class Studente extends Utente implements pubblicaPostAppunti {
 
     public void setcorsoLaurea(String corsoLaurea) {
         this.corsoLaurea = corsoLaurea;
+    }
+
+    @Override
+    public PostAppunti creaAppunti() {
+        return null;
+    }
+
+    @Override
+    public PostAppunti visualizzaAppunti() {
+        return null;
     }
 }

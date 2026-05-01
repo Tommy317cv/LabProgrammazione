@@ -5,6 +5,16 @@ import Utente.Utente;
 
 import java.time.LocalDate;
 
+/*
+ * Creazione di una sottoclasse di 'Post': 'Evento'.
+ * ..
+ * La classe 'Evento' è un'estensione della classe 'Post' e oltre agli attributi acquisiti, aggiunge
+ * anche gli attributi: dataEvento, luogoEvento, descrizioneEvento e listaInvitati; e un metodo: addInvitati.
+ * Questa classe ha una relazione con la classe 'Utente', zero o più eventi possono avere
+ * zero o più utenti come invitati.
+ * 'Evento' implementa l'interfaccia 'Votabile'; prendendo i loro metodi.
+ */
+
 public class Evento extends Post implements Votabile {
     private LocalDate dataEvento;
     private String luogoEvento;

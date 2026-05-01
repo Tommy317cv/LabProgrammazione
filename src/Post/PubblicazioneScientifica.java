@@ -5,6 +5,17 @@ import Utente.Utente;
 
 import java.time.LocalDate;
 
+ /*
+ * Creazione di una sottoclasse di 'PostDocumentale': 'PubblicazioneScientifica'.
+ * ..
+ * La classe 'PubblicazioneScientifica' è un'estensione della classe 'PostDocumentale' che a sua volta è un'estensione
+ * della classe 'Post'; ma oltre agli attributi acquisiti, aggiunge anche l'attributo: altreCitazioni.
+ * La classe 'PubblicazioneScientifica' ha una relazione con se stessa, una PubblicazioneScientifica può citare
+ * zero o più altri 'PubblicazioneScientifiche'.
+ * 'PubblicazioneScientifica' implementa un'interfaccia 'Taggabile', prendendo i suoi metodi.
+ */
+
+
 public class PubblicazioneScientifica extends PostDocumentale implements Taggabile {
     private PubblicazioneScientifica[] altreCitazioni;
 
