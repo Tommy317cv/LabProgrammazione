@@ -58,6 +58,8 @@ public class Evento extends Post implements Votabile {
 
     //Metodi
 
+    public void addInvitati(Utente Invitato) {};
+
     @Override
     int calcolaDimensionesPost() {
         return 0;

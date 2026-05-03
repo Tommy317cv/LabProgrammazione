@@ -76,10 +76,7 @@ public abstract class Post{
 
     public Notifica creaNotifica() {return null;}
 
-    public Utente[] listaUtenti_MiPiace ()
-    {
-        return null;
-    }
+
 
 }
 
