@@ -11,7 +11,7 @@ import java.time.LocalDate;
  * La classe 'PubblicazioneScientifica' è un'estensione della classe 'PostDocumentale' che a sua volta è un'estensione
  * della classe 'Post'; ma oltre agli attributi acquisiti, aggiunge anche l'attributo: altreCitazioni.
  * La classe 'PubblicazioneScientifica' ha una relazione con se stessa, una PubblicazioneScientifica può citare
- * zero o più altri 'PubblicazioneScientifiche'.
+ * zero o più altre 'PubblicazioneScientifiche'.
  * 'PubblicazioneScientifica' implementa un'interfaccia 'Taggabile', prendendo i suoi metodi.
  */
 

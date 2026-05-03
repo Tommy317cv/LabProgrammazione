@@ -10,6 +10,6 @@ import Post.Evento;
  */
 public interface pubblicaEvento {
 
-public Post.Evento creaEvento();
+public Evento creaEvento();
 
 }
