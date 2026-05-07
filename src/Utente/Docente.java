@@ -5,8 +5,9 @@ import ClassiAppoggio.Corso;
 /**
  * Creazione di una sottoclasse di 'Utente': 'Docente'.
  * .
- * La classe 'Docente' è un'estensione della classe 'Utente', questa classe non aggiunge ulteriori metodi e attributi.
- * 'Docente'  ha una relazione con la classe 'Corso', un docente può insegnare in zero o più corsi.
+ * La classe 'Docente' è un'estensione della classe 'Utente',
+ * non aggiunge altri attributi oltre quelli acquisiti dalla classe madre.
+ * 'Docente' ha una relazione con la classe 'Corso', un docente può insegnare in zero o più corsi.
  */
 public class Docente extends Utente {
 

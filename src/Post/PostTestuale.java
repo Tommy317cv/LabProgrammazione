@@ -9,6 +9,7 @@ import java.time.LocalDate;
  * ..
  * La classe 'PostTestuale' è un'estensione della classe 'Post' che non aggiunge ulteriori metodi e attributi.
  */
+
 public class PostTestuale extends Post {
 
     //Costruttore

@@ -12,6 +12,8 @@ import java.time.LocalDate;
  * anche l'attributo: linkVideo.
  * 'PostMultimediale' implementa un'interfaccia 'Taggabile', prendendo il suo metodo.
  */
+
+
 public class PostMultimediale extends Post implements Taggabile {
     private String linkVideo;
 

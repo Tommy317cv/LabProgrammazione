@@ -14,6 +14,7 @@ import java.time.LocalDate;
  * zero o più utenti come invitati.
  * 'Evento' implementa l'interfaccia 'Votabile'; prendendo i loro metodi.
  */
+
 public class Evento extends Post implements Votabile {
     private LocalDate dataEvento;
     private String luogoEvento;
@@ -57,6 +58,8 @@ public class Evento extends Post implements Votabile {
 
     //Metodi
 
+    public void addInvitati(Utente Invitato) {};
+
     @Override
     int calcolaDimensionesPost() {
         return 0;
@@ -71,6 +74,4 @@ public class Evento extends Post implements Votabile {
     public double mediaVoti() {
         return 0;
     }
-
-    public void addInvitati(Utente UtenteInvitato){}
 }

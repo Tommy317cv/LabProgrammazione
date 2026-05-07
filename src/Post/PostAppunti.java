@@ -7,7 +7,7 @@ import Utente.Utente;
 
 import java.time.LocalDate;
 
-/**
+ /**
  * Creazione di una sottoclasse di 'PostDocumentale': 'PostAppunti'.
  * ..
  * La classe 'PostAppunti' è un'estensione della classe 'PostDocumentale' che a sua volta è un'estensione
@@ -16,6 +16,8 @@ import java.time.LocalDate;
  * visualizzare zero o più studenti .
  * 'PostAppunti' implementa l'interfaccia 'Votabile', prendendo i suoi metodi.
  */
+
+
 public class PostAppunti extends PostDocumentale implements Votabile, pubblicaEvento{
 
     private Studente[] utentiAbilitatiVisualizzare;

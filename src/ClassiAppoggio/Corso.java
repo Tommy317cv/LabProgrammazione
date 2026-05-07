@@ -4,7 +4,7 @@ import Utente.Docente;
 import Utente.DocenteRicercatore;
 import Utente.Studente;
 
-/**
+ /**
  * Creazione di un generico corso di laurea.
  * ..
  * La classe 'Corso' permette di creare nuovi corsi con la variabile: nomeCorso;
@@ -13,6 +13,8 @@ import Utente.Studente;
  * studenti possono partecipare a zero o più, zero o un docentericercatore può insegnare in zero o più corsi,
  * un docente può insegnare in zero o più corsi.
  */
+
+
 public class Corso {
 
     private String nomeCorso;
