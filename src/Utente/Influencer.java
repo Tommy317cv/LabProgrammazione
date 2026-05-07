@@ -1,6 +1,5 @@
 package Utente;
 
-import Interface.pubblicaEvento;
 import Post.Evento;
 
 /**
@@ -10,7 +9,7 @@ import Post.Evento;
  * della classe 'Utente', aggiunge anche un attributo: suntaBlu.
  * La classe 'Influencer' implementa un'interfaccia 'pubblicaEvento', prendendo i suoi metodi.
  */
-public class Influencer extends Ricercatore implements pubblicaEvento {
+public class Influencer extends Ricercatore{
 
 
     private boolean spuntaBlu;
@@ -39,8 +38,4 @@ public class Influencer extends Ricercatore implements pubblicaEvento {
         return spuntaBlu;
     }
 
-    @Override
-    public Evento creaEvento() {
-        return null;
-    }
 }

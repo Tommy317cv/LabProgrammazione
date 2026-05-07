@@ -1,7 +1,6 @@
 package Post;
 
 import Interface.Votabile;
-import Interface.pubblicaEvento;
 import Utente.Studente;
 import Utente.Utente;
 
@@ -18,7 +17,7 @@ import java.time.LocalDate;
  */
 
 
-public class PostAppunti extends PostDocumentale implements Votabile, pubblicaEvento{
+public class PostAppunti extends PostDocumentale implements Votabile{
 
     private Studente[] utentiAbilitatiVisualizzare;
 
@@ -37,11 +36,6 @@ public class PostAppunti extends PostDocumentale implements Votabile, pubblicaEv
     }
 
     //Metodi
-
-    @Override
-    public Evento creaEvento() {
-        return null;
-    }
 
     @Override
     public void addVoto(double voto) {
