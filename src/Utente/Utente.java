@@ -32,6 +32,8 @@ public abstract class Utente {
     private Utente[] listaSeguiti;
     private Notifica [] NotificheUtente;
     private Post[] PostMessoLike;
+    private Post[] PostPubblicati;
+    private Post[] PostVisualizzati;
     private boolean InvitatoEvento;
     //Costruttore
 
