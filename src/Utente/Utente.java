@@ -10,6 +10,9 @@ import ClassiAppoggio.Notifica;
  * e come metodi: seguireUtente, smettiSeguireUtente, aggiungiFollower, rimuoviFollower, addPost e notificaVisualizzata.
  * Essendo una classe astratta non è istanziabile ma permette l'estensione dei suoi attributi e
  * dei suoi metodi alle diverse sottoclassi.
+ * Questa classe ha una relazione con la classe 'Evento', zero o più Utenti possono essere invitati a
+ * zero o più eventi
+ * La classe 'Utente' ha una relazione con se stessa, un 'Utente' può seguire zero o più altri 'Utente'.
  */
 public abstract class Utente {
     //Variabili di classe

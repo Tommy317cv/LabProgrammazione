@@ -12,7 +12,9 @@ import java.time.LocalDate;
  * ..
  * La classe 'PostAppunti' è un'estensione della classe 'PostDocumentale' che a sua volta è un'estensione
  * della classe 'Post'; ma oltre agli attributi acquisiti, aggiunge anche l'attributo: utentiAbilitatiVisualizzare.
- * 'PostAppunti' implementa un'interfaccia 'Votabile', prendendo i suoi metodi.
+ * Questa classe ha un collegamento con la classe 'Studenti', zero o più post possono
+ * visualizzare zero o più studenti .
+ * 'PostAppunti' implementa l'interfaccia 'Votabile', prendendo i suoi metodi.
  */
 public class PostAppunti extends PostDocumentale implements Votabile, pubblicaEvento{
 
