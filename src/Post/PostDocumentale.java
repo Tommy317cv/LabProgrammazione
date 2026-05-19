@@ -25,10 +25,10 @@ import java.time.LocalDate;
  * La classe 'PostDocumentale' ha una relazione con se stessa, un 'PostDocumentale' può citare zero o più altri 'PostDocumentali'.
  */
 public class PostDocumentale extends Post {
-    private String idAlfanumerico;
-    private String Titolo;
+    private final String idAlfanumerico;
+    private final String Titolo;
     private PostDocumentale [] Citazioni;
-    private int dimensionePDF;
+    private final int dimensionePDF;
 
     //Costruttore
 

@@ -1,7 +1,6 @@
 package Post;
 
 import Interface.Votabile;
-import Utente.Studente;
 import Utente.Utente;
 
 import java.time.LocalDate;
@@ -19,7 +18,7 @@ import java.time.LocalDate;
 
 public class PostAppunti extends PostDocumentale implements Votabile{
 
-    private Studente[] utentiAbilitatiVisualizzare;
+    private Utente[] utentiAbilitatiVisualizzare;
 
     //Costruttore
 

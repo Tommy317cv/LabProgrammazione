@@ -2,7 +2,7 @@ package Utente;
 import Post.Post;
 import Post.Evento;
 import ClassiAppoggio.Notifica;
-
+import Post.PostAppunti;
 
 /**
  * Creazione di un generico utente all'interno di 'Supsibook'.
@@ -34,6 +34,8 @@ private boolean utenteAttivo;
     private Post[] postMessoLike;
     private Post[] postPubblicati;
     private Evento[] eventiInvitato;
+    private PostAppunti[] postAppuntiVisuallizabili;
+
     //Costruttore
 
     public Utente(String nickname, String password, String email) {

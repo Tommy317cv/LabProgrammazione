@@ -15,7 +15,7 @@ import java.time.LocalDate;
 
 
 public class PostMultimediale extends Post implements Taggabile {
-    private String linkVideo;
+    private final String linkVideo;
 
     //Costruttore
 

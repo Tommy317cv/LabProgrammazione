@@ -22,7 +22,7 @@ import java.time.LocalDate;
 public abstract class Post{
     private final String IDPOST;
     private final LocalDate dataPubblicazione;
-    private String testoDescrittivo;
+    private final String testoDescrittivo;
 
 
     //Relazioni

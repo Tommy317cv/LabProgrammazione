@@ -16,9 +16,12 @@ import java.time.LocalDate;
  */
 
 public class Evento extends Post implements Votabile {
-    private LocalDate dataEvento;
-    private String luogoEvento;
-    private String descrizioneEvento;
+    private final LocalDate dataEvento;
+    private final String luogoEvento;
+    private final String descrizioneEvento;
+
+    //Relazione
+
     private Utente[] listaInvitati;
 
     //Costruttore
@@ -31,8 +34,6 @@ public class Evento extends Post implements Votabile {
         this.listaInvitati = new Utente[NumerolistaInvitati];
 
     }
-
-
 
     //Getter
 
