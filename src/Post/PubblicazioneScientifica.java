@@ -56,4 +56,10 @@ public class PubblicazioneScientifica extends PostDocumentale implements Taggabi
     public void getTag() {
 
     }
-}
+
+     @Override
+     public int calcolaDimensionesPost() {
+
+         return super.calcolaDimensionesPost();
+     }
+ }

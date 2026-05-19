@@ -55,12 +55,6 @@ public abstract class Post{
 
     public Utente getUtente() {return null;}
 
-    //Setter
-
-    public void setTestodescrittivo(String testodescrittivo) {
-        this.testoDescrittivo = testodescrittivo;
-    }
-
     //Metodi
 
     public void aggiungiLike( Utente Utente_Messo_Like ) {}

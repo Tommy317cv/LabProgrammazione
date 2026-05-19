@@ -24,13 +24,13 @@ public class PostAppunti extends PostDocumentale implements Votabile{
 
     public PostAppunti(String idpost, LocalDate datapubblicazione, String testodescrittivo, Utente utentecreatore, String idAlfanumerico, String Titolo, String Citazione, int dimensionePDF, int NumeroUtentiAbilitatiVisualizzare) {
         super(idpost, datapubblicazione, testodescrittivo, utentecreatore, idAlfanumerico, Titolo, dimensionePDF);
-        this.utentiAbilitatiVisualizzare = new Studente[NumeroUtentiAbilitatiVisualizzare];
+        this.utentiAbilitatiVisualizzare = new Utente[NumeroUtentiAbilitatiVisualizzare];
     }
 
 
-//Getter
+    //Getter
 
-    public Studente[] getUtentiAbilitatiVisualizzare() {
+    public Utente[] getUtentiAbilitatiVisualizzare() {
         return utentiAbilitatiVisualizzare;
     }
 
