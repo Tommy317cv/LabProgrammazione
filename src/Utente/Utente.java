@@ -4,6 +4,8 @@ import Post.Evento;
 import ClassiAppoggio.Notifica;
 import Post.PostAppunti;
 
+import java.util.Objects;
+
 /**
  * Creazione di un generico utente all'interno di 'Supsibook'.
  * .
@@ -58,6 +60,21 @@ private boolean utenteAttivo;
 
     public Utente[] getListaSeguiti() {return null;}
 
+    //Setter
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public void setUtenteAttivo(boolean utenteAttivo) {
+        this.utenteAttivo = utenteAttivo;
+    }
+
+
     //Metodi
 
     public void seguireUtente(Utente Utente_Da_Seguire) {}
@@ -72,12 +89,23 @@ private boolean utenteAttivo;
 
     public boolean notificaVisualizzata(Notifica Visualizzata ){return false;}
 
-    public boolean verficaPassword(){
+    public boolean verificaPassword(){
         if (password.length() > 7)
     {return true;}
-        else {return false;}
+        else {
+            return false;
+        }
     }
 
+    @Override
+    public final boolean equals(Object o) {
+        if (!(o instanceof Utente utente)) return false;
 
+        return Objects.equals(NICKNAME, utente.NICKNAME);
+    }
 
+    @Override
+    public int hashCode() {
+        return 0;
+    }
 }

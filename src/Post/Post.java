@@ -57,9 +57,6 @@ public abstract class Post{
 
     //Setter
 
-    public void setTestodescrittivo(String testodescrittivo) {
-        this.testoDescrittivo = testodescrittivo;
-    }
 
     //Metodi
 
