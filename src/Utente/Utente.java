@@ -1,5 +1,6 @@
 package Utente;
 import Post.Post;
+import Post.Evento;
 import ClassiAppoggio.Notifica;
 
 
@@ -22,19 +23,17 @@ public abstract class Utente {
     private final String NICKNAME;
     private String password;
     private String email;
-
+private boolean utenteAttivo;
 
 
     //Relazioni
 
-    private Post [] PostUtente;
     private Utente[] listaFollowers;
     private Utente[] listaSeguiti;
-    private Notifica [] NotificheUtente;
-    private Post[] PostMessoLike;
-    private Post[] PostPubblicati;
-    private Post[] PostVisualizzati;
-    private boolean InvitatoEvento;
+    private Notifica [] notificheUtente;
+    private Post[] postMessoLike;
+    private Post[] postPubblicati;
+    private Evento[] eventiInvitato;
     //Costruttore
 
     public Utente(String nickname, String password, String email) {
@@ -70,4 +69,13 @@ public abstract class Utente {
     public void addPost(Post Post_Da_Pubblicare) {}
 
     public boolean notificaVisualizzata(Notifica Visualizzata ){return false;}
+
+    public boolean verficaPassword(){
+        if (password.length() > 7)
+    {return true;}
+        else {return false;}
+    }
+
+
+
 }

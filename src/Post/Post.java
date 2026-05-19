@@ -27,8 +27,8 @@ public abstract class Post{
 
     //Relazioni
 
-    private Utente UtenteCreatore; //per relazione
-    private Notifica [] notificaRiferimento; //per relazione
+    private Utente UtenteCreatore;
+    private Notifica [] notificaRiferimento;
     private Utente[] listaLike;
     //Costruttore
 
@@ -67,12 +67,7 @@ public abstract class Post{
 
     public void rimuoviLike(Utente Utente_Rimuovi_Like) {}
 
-    public int calcolaDimensioneTesto()
-    {
-        return 0;
-    }
-
-    abstract int calcolaDimensionesPost();
+     public int calcolaDimensionesPost() {return 0;};
 
     public Notifica creaNotifica() {return null;}
 

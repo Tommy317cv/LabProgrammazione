@@ -30,9 +30,10 @@ public class PostMultimediale extends Post implements Taggabile {
 
     //Metodi
 
+
     @Override
-    int calcolaDimensionesPost() {
-        return 0;
+    public int calcolaDimensionesPost() {
+        return super.calcolaDimensionesPost();
     }
 
     @Override

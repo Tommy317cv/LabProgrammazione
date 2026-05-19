@@ -17,12 +17,10 @@ public class PostTestuale extends Post {
     public PostTestuale(String idpost, LocalDate datapubblicazione, String testodescrittivo, Utente utentecreatore) {
         super(idpost, datapubblicazione, testodescrittivo, utentecreatore);
     }
-
-
     //Metodi
 
     @Override
-    int calcolaDimensionesPost() {
-        return 0;
+    public int calcolaDimensionesPost() {
+        return super.calcolaDimensionesPost();
     }
 }

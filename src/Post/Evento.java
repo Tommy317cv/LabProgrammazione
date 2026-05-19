@@ -61,8 +61,8 @@ public class Evento extends Post implements Votabile {
     public void addInvitati(Utente Invitato) {};
 
     @Override
-    int calcolaDimensionesPost() {
-        return 0;
+    public int calcolaDimensionesPost() {
+        return super.calcolaDimensionesPost();
     }
 
     @Override

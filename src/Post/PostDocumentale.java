@@ -57,9 +57,10 @@ public class PostDocumentale extends Post {
 
     //Metodi
 
+
     @Override
-    int calcolaDimensionesPost() {
-        return 0;
+    public int calcolaDimensionesPost() {
+        return super.calcolaDimensionesPost();
     }
 
     public void addCitazione(PostDocumentale CitazioneDaAggiugnere) {}
