@@ -3,7 +3,7 @@ package Post;
 import Interface.Votabile;
 import Utente.Utente;
 
-import java.time.LocalDate;
+import java.util.Date;
 
 /**
  * Creazione di una sottoclasse di 'Post': 'Evento'.
@@ -16,7 +16,7 @@ import java.time.LocalDate;
  */
 
 public class Evento extends Post implements Votabile {
-    private final LocalDate dataEvento;
+    private final Date dataEvento;
     private final String luogoEvento;
     private final String descrizioneEvento;
 
@@ -26,7 +26,7 @@ public class Evento extends Post implements Votabile {
 
     //Costruttore
 
-    public Evento(String idpost, LocalDate datapubblicazione, String testodescrittivo, Utente utentecreatore, LocalDate dataevento, String luogoEvento, String descrizioneevento, int NumerolistaInvitati) {
+    public Evento(String idpost, Date datapubblicazione, String testodescrittivo, Utente utentecreatore, Date dataevento, String luogoEvento, String descrizioneevento, int NumerolistaInvitati) {
         super(idpost, datapubblicazione, testodescrittivo, utentecreatore);
         this.dataEvento = dataevento;
         this.luogoEvento = luogoEvento;
@@ -37,7 +37,7 @@ public class Evento extends Post implements Votabile {
 
     //Getter
 
-    public LocalDate getDataEvento() {
+    public Date getDataEvento() {
         return dataEvento;
     }
 

@@ -23,7 +23,7 @@ public abstract class Utente {
     private final String NICKNAME;
     private String password;
     private String email;
-private boolean utenteAttivo;
+    private boolean utenteAttivo;
 
 
     //Relazioni

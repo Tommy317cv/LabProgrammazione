@@ -2,7 +2,7 @@ package Post;
 
 import Utente.Utente;
 
-import java.time.LocalDate;
+import java.util.Date;
 
 /**
  * Creazione di una sottoclasse di 'Post': 'PostDocumentale'.
@@ -29,10 +29,11 @@ public class PostDocumentale extends Post {
     private final String Titolo;
     private PostDocumentale [] Citazioni;
     private final int dimensionePDF;
+    private int dimensionetotale = 0;
 
     //Costruttore
 
-    public PostDocumentale(String idpost, LocalDate datapubblicazione, String testodescrittivo, Utente utentecreatore, String idAlfanumerico, String Titolo, int dimensionePDF) {
+    public PostDocumentale(String idpost, Date datapubblicazione, String testodescrittivo, Utente utentecreatore, String idAlfanumerico, String Titolo, int dimensionePDF) {
         super(idpost, datapubblicazione, testodescrittivo, utentecreatore);
         this.idAlfanumerico = idAlfanumerico;
         this.Titolo = Titolo;
@@ -45,12 +46,21 @@ public class PostDocumentale extends Post {
     public String getTitolo() {return Titolo;}
     public int getDimensionePDF() {return dimensionePDF;}
 
-    //Metodi
+    @Override
+    public int getDimensionetotale() {return dimensionetotale;}
 
+    //Metodi
 
     @Override
     public int calcolaDimensionesPost() {
-        return super.calcolaDimensionesPost();
+        int dimensionetotale = super.calcolaDimensionesPost() +
+                getIdAlfanumerico().length() + 
+                getTitolo().length() + 
+                getDimensionePDF();
+        for (int i = 0; i < this.Citazioni.length; i++) {
+            dimensionetotale = dimensionetotale + this.Citazioni[i].calcolaDimensionesPost();
+        }
+        return dimensionetotale; 
     }
 
     public void addCitazione(PostDocumentale CitazioneDaAggiugnere) {}

@@ -2,8 +2,8 @@ package Post;
 
 import Interface.Votabile;
 import Utente.Utente;
+import java.util.Date;
 
-import java.time.LocalDate;
 
  /**
  * Creazione di una sottoclasse di 'PostDocumentale': 'PostAppunti'.
@@ -22,7 +22,7 @@ public class PostAppunti extends PostDocumentale implements Votabile{
 
     //Costruttore
 
-    public PostAppunti(String idpost, LocalDate datapubblicazione, String testodescrittivo, Utente utentecreatore, String idAlfanumerico, String Titolo, String Citazione, int dimensionePDF, int NumeroUtentiAbilitatiVisualizzare) {
+    public PostAppunti(String idpost, Date datapubblicazione, String testodescrittivo, Utente utentecreatore, String idAlfanumerico, String Titolo, String Citazione, int dimensionePDF, int NumeroUtentiAbilitatiVisualizzare) {
         super(idpost, datapubblicazione, testodescrittivo, utentecreatore, idAlfanumerico, Titolo, dimensionePDF);
         this.utentiAbilitatiVisualizzare = new Utente[NumeroUtentiAbilitatiVisualizzare];
     }

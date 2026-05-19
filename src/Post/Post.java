@@ -3,9 +3,9 @@ package Post;
 import ClassiAppoggio.Notifica;
 import Utente.Utente;
 
-import java.time.LocalDate;
+import java.util.Date;
 
- /**
+/**
   * Aggiunta di un post da parte di un utente all'interno di 'Supsibook'.
   * .
   * La classe 'Post' permette di creare nuovi post con le variabili: idpost, datapubblicazione e testodescrittivo;
@@ -21,9 +21,9 @@ import java.time.LocalDate;
 
 public abstract class Post{
     private final String IDPOST;
-    private final LocalDate dataPubblicazione;
+    private final Date dataPubblicazione;
     private final String testoDescrittivo;
-
+    private int dimensionetotale = 0;
 
     //Relazioni
 
@@ -32,7 +32,7 @@ public abstract class Post{
     private Utente[] listaLike;
     //Costruttore
 
-    public Post(String idpost, LocalDate datapubblicazione, String testodescrittivo, Utente utentecreatore) {
+    public Post(String idpost, Date datapubblicazione, String testodescrittivo, Utente utentecreatore) {
         this.IDPOST = idpost;
         this.dataPubblicazione = datapubblicazione;
         this.testoDescrittivo = testodescrittivo;
@@ -41,13 +41,11 @@ public abstract class Post{
 
     //Getter
 
-    public String getTestodescrittivo() {
-        return testoDescrittivo;
-    }
+    public String getTestodescrittivo() {return testoDescrittivo;}
 
     public String getIDPOST() {return IDPOST;}
 
-    public LocalDate getDataPubblicazione() {return dataPubblicazione;}
+    public Date getDataPubblicazione() {return dataPubblicazione;}
 
     public String getTestoDescrittivo() {return testoDescrittivo;}
 
@@ -55,17 +53,21 @@ public abstract class Post{
 
     public Utente getUtente() {return null;}
 
+    public int getDimensionetotale() {return dimensionetotale;}
+
     //Metodi
 
     public void aggiungiLike( Utente Utente_Messo_Like ) {}
 
     public void rimuoviLike(Utente Utente_Rimuovi_Like) {}
 
-     public int calcolaDimensionesPost() {return 0;};
+
+    public int calcolaDimensionesPost() {
+        dimensionetotale = dimensionetotale + getTestoDescrittivo().length();
+        return dimensionetotale;
+    }
 
     public Notifica creaNotifica() {return null;}
-
-
 
 }
 
