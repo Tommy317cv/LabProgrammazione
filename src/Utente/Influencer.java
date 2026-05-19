@@ -1,6 +1,9 @@
 package Utente;
 
 import Post.Evento;
+import Post.PostAppunti;
+import Post.Post;
+
 
 /**
  *Creazione di una sottoclasse di 'Ricercatore': 'Influencer'.
@@ -16,7 +19,7 @@ public class Influencer extends Ricercatore{
 
     //Costruttore
 
-    public Influencer(String nickname, String password, String email, int hIndex, String parolaChiave, boolean spuntaBlu) {
+    public Influencer(String nickname, String password, String email, int hIndex, String []parolaChiave, boolean spuntaBlu) {
         super(nickname, password, email, hIndex, parolaChiave);
         this.spuntaBlu = spuntaBlu;
     }
@@ -36,6 +39,20 @@ public class Influencer extends Ricercatore{
     public boolean isspuntaBlu() {
         boolean spuntaBlu = this.spuntaBlu;
         return spuntaBlu;
+    }
+
+   //Modifica del metodo puoPubblicare per permettere di pubblicare Evento ma non Post di Appunti
+
+    @Override
+    protected boolean puoPubblicare(Post TipologiaPost) {
+        return !(TipologiaPost instanceof PostAppunti);
+    }
+
+
+    //Metodo toString
+    @Override
+    public String toString() {
+        return "Influencer '"+getNICKNAME();
     }
 
 }

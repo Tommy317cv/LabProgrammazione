@@ -1,7 +1,9 @@
 package Utente;
 
 import ClassiAppoggio.Corso;
+import Post.Post;
 import Post.PostAppunti;
+import Post.Evento;
 
 /**
  * Creazione di una sottoclasse di 'Utente': 'Studente'.
@@ -14,7 +16,7 @@ import Post.PostAppunti;
  * 'Studente' implementa un'interfaccia 'pubblicaPostAppunti', prendendo i suoi metodi.
  */
 
-public class Studente extends Utente{
+public class Studente extends Utente {
 
     private String corsoLaurea;
 
@@ -42,4 +44,28 @@ public class Studente extends Utente{
         this.corsoLaurea = corsoLaurea;
     }
 
+    public void setCorsiSeguiti(Corso[] corsiSeguiti) {
+        CorsiSeguiti = corsiSeguiti;
+    }
+
+    //Metodi
+
+    //Modifica del metodo puoPubblicare per permettere di pubblicare Posti di appunti ma non Eventi
+
+    @Override
+    protected boolean puoPubblicare(Post TipologiaPost) {
+        return !(TipologiaPost instanceof Evento);
+    }
+
+
+    //Metodo toString
+
+    @Override
+    public String toString() {
+        return "Studente '" + getNICKNAME();
+    }
+
 }
+
+
+

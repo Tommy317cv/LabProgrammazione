@@ -4,6 +4,8 @@ import Post.Evento;
 import ClassiAppoggio.Notifica;
 import Post.PostAppunti;
 
+import java.util.Objects;
+
 /**
  * Creazione di un generico utente all'interno di 'Supsibook'.
  * .
@@ -25,6 +27,7 @@ public abstract class Utente {
     private String email;
     private boolean utenteAttivo;
 
+private int NextPos=0;
 
     //Relazioni
 
@@ -32,7 +35,7 @@ public abstract class Utente {
     private Utente[] listaSeguiti;
     private Notifica [] notificheUtente;
     private Post[] postMessoLike;
-    private Post[] postPubblicati;
+    private Post[] postPubblicati = new Post[100];
     private Evento[] eventiInvitato;
     private PostAppunti[] postAppuntiVisuallizabili;
 
@@ -68,14 +71,38 @@ public abstract class Utente {
 
     public void rimuoviFollower(Utente Follower_Rim) {}
 
-    public void addPost(Post Post_Da_Pubblicare) {}
+
+    public void addPost(Post Post_Da_Pubblicare) { //Metodo per pubblicare
+
+        if (!puoPubblicare(Post_Da_Pubblicare)) {
+            System.out.println("Errore: utente non abilitato a pubblicare questo contenuto");
+
+        }else {
+
+            if (NextPos < postPubblicati.length) {
+                postPubblicati[NextPos] = Post_Da_Pubblicare;
+                NextPos++;
+            } else {
+                System.out.println("Array pieno");
+            }
+        }
+    }
+
+    protected boolean puoPubblicare(Post TipologiaPost) { //Metodo per eseguire il controllo sui post
+        return !(TipologiaPost instanceof Evento ||
+                TipologiaPost instanceof PostAppunti);
+    }
 
     public boolean notificaVisualizzata(Notifica Visualizzata ){return false;}
+
 
     public boolean verficaPassword(){
         if (password.length() > 7)
     {return true;}
-        else {return false;}
+        else
+        {
+            System.out.println("ERR: Password troppo corta (minimo 8 caratteri)");
+            return false;}
     }
 
     @Override
@@ -89,4 +116,5 @@ public abstract class Utente {
     public int hashCode() {
         return 0;
     }
+
 }

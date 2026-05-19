@@ -26,10 +26,9 @@ public class Corso {
     private Studente[] StudentiChePartecipaAlCorso;
     //Costruttore
 
-    public Corso(String nomeCorso, Docente docentePerCorso, DocenteRicercatore docenteRicercatorePerCorso, Studente Studente1) {
+    public Corso(String nomeCorso, Docente docentePerCorso, Studente Studente1) {
         this.nomeCorso = nomeCorso;
         this.DocentePerCorso = docentePerCorso;
-        this.DocenteRicercatorePerCorso = docenteRicercatorePerCorso;
         Studente1 = StudentiChePartecipaAlCorso[0];
     }
 

@@ -9,15 +9,16 @@ package Utente;
 public class Ricercatore extends Utente {
 
     private int hIndex;
-    private String paroleChiave;
+    private String [] paroleChiave;
 
     //Costruttore
 
-    public Ricercatore(String nickname, String password, String email, int hIndex, String paroleChiave) {
+    public Ricercatore(String nickname, String password, String email, int hIndex, String[] paroleChiave) {
         super(nickname, password, email);
         this.hIndex = hIndex;
         this.paroleChiave = paroleChiave;
     }
+
 
     //Getter
 
@@ -25,22 +26,28 @@ public class Ricercatore extends Utente {
         return hIndex;
     }
 
-    public String getparolaChiave() {
+    public String[] getParoleChiave() {
         return paroleChiave;
     }
 
-    //Setter
+//Setter
 
     public void sethIndex(int hIndex) {
         this.hIndex = hIndex;
     }
 
-    public void setparolaChiave(String parolaChiave) {
-        paroleChiave = parolaChiave;
+    public void setParoleChiave(String[] paroleChiave) {
+        this.paroleChiave = paroleChiave;
     }
 
-    //Metodi
+//Metodi
 
     public void AddParolaChiave(String ParolaChiaveDaAggiugnere) {}
 
+    //Metodo toString
+
+    @Override
+    public String toString() {
+        return "Ricercatore '"+getNICKNAME();
+    }
 }

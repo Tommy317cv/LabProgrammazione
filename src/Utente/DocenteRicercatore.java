@@ -19,7 +19,14 @@ public class DocenteRicercatore extends Ricercatore {
 
     //Costruttore
 
-    public DocenteRicercatore(String nickname, String password, String email, int hIndex, String parolaChiave) {
+    public DocenteRicercatore(String nickname, String password, String email, int hIndex, String []parolaChiave) {
         super(nickname, password, email, hIndex, parolaChiave);
     }
+
+    //Metodo toString
+    @Override
+    public String toString() {
+        return "Docente-Ricercatore '"+getNICKNAME();
+    }
+
 }
