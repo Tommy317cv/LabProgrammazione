@@ -28,7 +28,7 @@ public class PostAppunti extends PostDocumentale implements Votabile{
     }
 
 
-//Getter
+    //Getter
 
     public Utente[] getUtentiAbilitatiVisualizzare() {
         return utentiAbilitatiVisualizzare;

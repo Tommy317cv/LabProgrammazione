@@ -55,9 +55,6 @@ public abstract class Post{
 
     public Utente getUtente() {return null;}
 
-    //Setter
-
-
     //Metodi
 
     public void aggiungiLike( Utente Utente_Messo_Like ) {}

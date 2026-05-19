@@ -45,16 +45,6 @@ public class PostDocumentale extends Post {
     public String getTitolo() {return Titolo;}
     public int getDimensionePDF() {return dimensionePDF;}
 
-
-
-    //Setter
-
-    public void setDimensionePDF(int dimensionePDF) {this.dimensionePDF = dimensionePDF;}
-    public void setTitolo(String titolo) {Titolo = titolo;}
-    public void setIdAlfanumerico(String idAlfanumerico) {this.idAlfanumerico = idAlfanumerico;}
-
-
-
     //Metodi
 
 
