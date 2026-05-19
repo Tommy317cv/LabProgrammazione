@@ -2,7 +2,7 @@ package Post;
 
 import Utente.Utente;
 
-import java.time.LocalDate;
+import java.util.Date;
 
 /**
  * Creazione di una sottoclasse di 'Post': 'PostTestuale'.
@@ -14,7 +14,7 @@ public class PostTestuale extends Post {
 
     //Costruttore
 
-    public PostTestuale(String idpost, LocalDate datapubblicazione, String testodescrittivo, Utente utentecreatore) {
+    public PostTestuale(String idpost, Date datapubblicazione, String testodescrittivo, Utente utentecreatore) {
         super(idpost, datapubblicazione, testodescrittivo, utentecreatore);
     }
     //Metodi

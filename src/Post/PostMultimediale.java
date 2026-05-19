@@ -3,7 +3,7 @@ package Post;
 import Interface.Taggabile;
 import Utente.Utente;
 
-import java.time.LocalDate;
+import java.util.Date;
 
 /**
  * Creazione di una sottoclasse di 'Post': 'PostMultimediale'.
@@ -20,7 +20,7 @@ public class PostMultimediale extends Post implements Taggabile {
     //Costruttore
 
 
-    public PostMultimediale(String idpost, LocalDate datapubblicazione, String testodescrittivo, Utente utentecreatore, String linkVideo) {
+    public PostMultimediale(String idpost, Date datapubblicazione, String testodescrittivo, Utente utentecreatore, String linkVideo) {
         super(idpost, datapubblicazione, testodescrittivo, utentecreatore);
         this.linkVideo = linkVideo;
     }

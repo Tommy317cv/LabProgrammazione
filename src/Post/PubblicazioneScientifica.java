@@ -3,7 +3,7 @@ package Post;
 import Interface.Taggabile;
 import Utente.Utente;
 
-import java.time.LocalDate;
+import java.util.Date;
 
  /**
  * Creazione di una sottoclasse di 'PostDocumentale': 'PubblicazioneScientifica'.
@@ -18,27 +18,27 @@ import java.time.LocalDate;
 
 public class PubblicazioneScientifica extends PostDocumentale implements Taggabile {
     private PubblicazioneScientifica[] altreCitazioni;
+    private int dimensionetotale = 0;
 
     //Costruttore
-    public PubblicazioneScientifica(String idpost, LocalDate datapubblicazione, String testodescrittivo, Utente utentecreatore, String idAlfanumerico,  String Titolo, String Citazione, int dimensionePDF, int NumeroPubblicazioniScientifiche) {
+    public PubblicazioneScientifica(String idpost, Date datapubblicazione, String testodescrittivo, Utente utentecreatore, String idAlfanumerico,  String Titolo, String Citazione, int dimensionePDF, int NumeroPubblicazioniScientifiche) {
         super(idpost, datapubblicazione, testodescrittivo, utentecreatore, idAlfanumerico, Titolo, dimensionePDF);
-    this.altreCitazioni = new PubblicazioneScientifica[NumeroPubblicazioniScientifiche];
+        this.altreCitazioni = new PubblicazioneScientifica[NumeroPubblicazioniScientifiche];
     }
-
 
     //Getter
 
     public PubblicazioneScientifica[] getAltrecitazioni() {
         return altreCitazioni;
     }
-
     public PubblicazioneScientifica[] getAltreCitazioni() {return altreCitazioni;}
+
+    @Override
+    public int getDimensionetotale() {return dimensionetotale;}
 
     //Setter
 
-    public void setAltrecitazioni(PubblicazioneScientifica[] altreCitazioni) {
-        this.altreCitazioni = altreCitazioni;
-    }
+    public void setAltrecitazioni(PubblicazioneScientifica[] altreCitazioni) {this.altreCitazioni = altreCitazioni;}
 
     //Metodi
 
@@ -59,7 +59,10 @@ public class PubblicazioneScientifica extends PostDocumentale implements Taggabi
 
      @Override
      public int calcolaDimensionesPost() {
-
+         for (int i = 0; i < this.altreCitazioni.length; i++) {
+             dimensionetotale = super.calcolaDimensionesPost() + this.altreCitazioni[i].calcolaDimensionesPost();
+         }
          return super.calcolaDimensionesPost();
      }
  }
+
