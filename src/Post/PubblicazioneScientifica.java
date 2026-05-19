@@ -5,7 +5,7 @@ import Utente.Utente;
 
 import java.util.Date;
 
- /**
+/**
  * Creazione di una sottoclasse di 'PostDocumentale': 'PubblicazioneScientifica'.
  * ..
  * La classe 'PubblicazioneScientifica' è un'estensione della classe 'PostDocumentale' che a sua volta è un'estensione
@@ -21,7 +21,7 @@ public class PubblicazioneScientifica extends PostDocumentale implements Taggabi
     private int dimensionetotale = 0;
 
     //Costruttore
-    public PubblicazioneScientifica(String idpost, Date datapubblicazione, String testodescrittivo, Utente utentecreatore, String idAlfanumerico,  String Titolo, String Citazione, int dimensionePDF, int NumeroPubblicazioniScientifiche) {
+    public PubblicazioneScientifica(String idpost, Date datapubblicazione, String testodescrittivo, Utente utentecreatore, String idAlfanumerico, String Titolo, String Citazione, int dimensionePDF, int NumeroPubblicazioniScientifiche) {
         super(idpost, datapubblicazione, testodescrittivo, utentecreatore, idAlfanumerico, Titolo, dimensionePDF);
         this.altreCitazioni = new PubblicazioneScientifica[NumeroPubblicazioniScientifiche];
     }
@@ -31,14 +31,21 @@ public class PubblicazioneScientifica extends PostDocumentale implements Taggabi
     public PubblicazioneScientifica[] getAltrecitazioni() {
         return altreCitazioni;
     }
-    public PubblicazioneScientifica[] getAltreCitazioni() {return altreCitazioni;}
+
+    public PubblicazioneScientifica[] getAltreCitazioni() {
+        return altreCitazioni;
+    }
 
     @Override
-    public int getDimensionetotale() {return dimensionetotale;}
+    public int getDimensionetotale() {
+        return dimensionetotale;
+    }
 
     //Setter
 
-    public void setAltrecitazioni(PubblicazioneScientifica[] altreCitazioni) {this.altreCitazioni = altreCitazioni;}
+    public void setAltrecitazioni(PubblicazioneScientifica[] altreCitazioni) {
+        this.altreCitazioni = altreCitazioni;
+    }
 
     //Metodi
 
@@ -57,12 +64,12 @@ public class PubblicazioneScientifica extends PostDocumentale implements Taggabi
 
     }
 
-     @Override
-     public int calcolaDimensionesPost() {
-         for (int i = 0; i < this.altreCitazioni.length; i++) {
-             dimensionetotale = super.calcolaDimensionesPost() + this.altreCitazioni[i].calcolaDimensionesPost();
-         }
-         return super.calcolaDimensionesPost();
-     }
- }
+    @Override
+    public int calcolaDimensionesPost() {
+        for (int i = 0; i < this.altreCitazioni.length; i++) {
+            dimensionetotale = super.calcolaDimensionesPost() + this.altreCitazioni[i].calcolaDimensionesPost();
+        }
+        return super.calcolaDimensionesPost();
+    }
+}
 

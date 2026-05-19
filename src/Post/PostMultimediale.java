@@ -26,7 +26,9 @@ public class PostMultimediale extends Post implements Taggabile {
     }
 
     //Getter
-    public String getLinkVideo() {return linkVideo;}
+    public String getLinkVideo() {
+        return linkVideo;
+    }
 
     //Metodi
 

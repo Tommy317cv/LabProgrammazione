@@ -1,4 +1,5 @@
 package Utente;
+
 import Post.Post;
 import Post.Evento;
 import ClassiAppoggio.Notifica;
@@ -27,13 +28,13 @@ public abstract class Utente {
     private String email;
     private boolean utenteAttivo;
 
-private int NextPos=0;
+    private int NextPos = 0;
 
     //Relazioni
 
     private Utente[] listaFollowers;
     private Utente[] listaSeguiti;
-    private Notifica [] notificheUtente;
+    private Notifica[] notificheUtente;
     private Post[] postMessoLike;
     private Post[] postPubblicati = new Post[100];
     private Evento[] eventiInvitato;
@@ -49,27 +50,43 @@ private int NextPos=0;
 
     //Getter
 
-    public String getNICKNAME() {return NICKNAME;}
+    public String getNICKNAME() {
+        return NICKNAME;
+    }
 
-    public String getPassword() {return password;}
+    public String getPassword() {
+        return password;
+    }
 
-    public String getEmail() {return email;}
+    public String getEmail() {
+        return email;
+    }
 
-    public Post[] getPostPubblicati() {return null;}
+    public Post[] getPostPubblicati() {
+        return null;
+    }
 
-    public Utente[] getListaFollowers() {return null;}
+    public Utente[] getListaFollowers() {
+        return null;
+    }
 
-    public Utente[] getListaSeguiti() {return null;}
+    public Utente[] getListaSeguiti() {
+        return null;
+    }
 
     //Metodi
 
-    public void seguireUtente(Utente Utente_Da_Seguire) {}
+    public void seguireUtente(Utente Utente_Da_Seguire) {
+    }
 
-    public void smettiSeguireUtente(Utente Utente_Smetti_Seguire) {}
+    public void smettiSeguireUtente(Utente Utente_Smetti_Seguire) {
+    }
 
-    public void aggiungiFollower(Utente Follower) {}
+    public void aggiungiFollower(Utente Follower) {
+    }
 
-    public void rimuoviFollower(Utente Follower_Rim) {}
+    public void rimuoviFollower(Utente Follower_Rim) {
+    }
 
 
     public void addPost(Post Post_Da_Pubblicare) { //Metodo per pubblicare
@@ -77,7 +94,7 @@ private int NextPos=0;
         if (!puoPubblicare(Post_Da_Pubblicare)) {
             System.out.println("Errore: utente non abilitato a pubblicare questo contenuto");
 
-        }else {
+        } else {
 
             if (NextPos < postPubblicati.length) {
                 postPubblicati[NextPos] = Post_Da_Pubblicare;
@@ -93,16 +110,18 @@ private int NextPos=0;
                 TipologiaPost instanceof PostAppunti);
     }
 
-    public boolean notificaVisualizzata(Notifica Visualizzata ){return false;}
+    public boolean notificaVisualizzata(Notifica Visualizzata) {
+        return false;
+    }
 
 
-    public boolean verficaPassword(){
-        if (password.length() > 7)
-    {return true;}
-        else
-        {
+    public boolean verficaPassword() {
+        if (password.length() > 7) {
+            return true;
+        } else {
             System.out.println("ERR: Password troppo corta (minimo 8 caratteri)");
-            return false;}
+            return false;
+        }
     }
 
     @Override

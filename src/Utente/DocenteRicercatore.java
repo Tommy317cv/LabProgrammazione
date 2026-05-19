@@ -3,7 +3,7 @@ package Utente;
 import ClassiAppoggio.Corso;
 
 /**
- *Creazione di una sottoclasse di 'Ricercatore': 'DocenteRicercatore'.
+ * Creazione di una sottoclasse di 'Ricercatore': 'DocenteRicercatore'.
  * .
  * La classe 'DocenteRicercatore' è un'estensione della classe 'Ricercatore' che a sua volta è un'estensione
  * della classe 'Utente', non aggiunge anche altri attributi.
@@ -19,14 +19,14 @@ public class DocenteRicercatore extends Ricercatore {
 
     //Costruttore
 
-    public DocenteRicercatore(String nickname, String password, String email, int hIndex, String []parolaChiave) {
+    public DocenteRicercatore(String nickname, String password, String email, int hIndex, String[] parolaChiave) {
         super(nickname, password, email, hIndex, parolaChiave);
     }
 
     //Metodo toString
     @Override
     public String toString() {
-        return "Docente-Ricercatore '"+getNICKNAME();
+        return "Docente-Ricercatore ' " + getNICKNAME();
     }
 
 }

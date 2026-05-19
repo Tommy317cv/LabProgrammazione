@@ -2,10 +2,11 @@ package Post;
 
 import Interface.Votabile;
 import Utente.Utente;
+
 import java.util.Date;
 
 
- /**
+/**
  * Creazione di una sottoclasse di 'PostDocumentale': 'PostAppunti'.
  * ..
  * La classe 'PostAppunti' è un'estensione della classe 'PostDocumentale' che a sua volta è un'estensione
@@ -16,7 +17,7 @@ import java.util.Date;
  */
 
 
-public class PostAppunti extends PostDocumentale implements Votabile{
+public class PostAppunti extends PostDocumentale implements Votabile {
 
     private Utente[] utentiAbilitatiVisualizzare;
 

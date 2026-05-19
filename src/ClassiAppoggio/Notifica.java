@@ -30,17 +30,19 @@ public class Notifica {
         this.utenteACuiInviare = utenteACuiInviare;
     }
 
-   //Getter
+    //Getter
 
     public Post getPostRiferimento() {
         return postRiferimento;
     }
+
     public boolean isNotificaVista() {
         return notificaVista;
     }
     //Metodi
 
-    public void segnaVisualizzata() {}
+    public void segnaVisualizzata() {
+    }
 
 }
 

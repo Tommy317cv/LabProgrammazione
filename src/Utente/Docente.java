@@ -13,7 +13,6 @@ public class Docente extends Utente {
 
 
     //Relazioni
-
     private Corso[] CorsiInsegnati;
 
     //Costruttore
@@ -26,7 +25,7 @@ public class Docente extends Utente {
 
     @Override
     public String toString() {
-        return "Docente '" + getNICKNAME();
+        return "Docente ' " + getNICKNAME();
 
     }
 }

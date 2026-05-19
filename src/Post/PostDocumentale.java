@@ -27,7 +27,7 @@ import java.util.Date;
 public class PostDocumentale extends Post {
     private final String idAlfanumerico;
     private final String Titolo;
-    private PostDocumentale [] Citazioni;
+    private PostDocumentale[] Citazioni;
     private final int dimensionePDF;
     private int dimensionetotale = 0;
 
@@ -42,28 +42,36 @@ public class PostDocumentale extends Post {
 
     //Getter
 
-    public String getIdAlfanumerico() {return idAlfanumerico;}
-    public String getTitolo() {return Titolo;}
-    public int getDimensionePDF() {return dimensionePDF;}
+    public String getIdAlfanumerico() {
+        return idAlfanumerico;
+    }
+
+    public String getTitolo() {
+        return Titolo;
+    }
+
+    public int getDimensionePDF() {
+        return dimensionePDF;
+    }
 
     @Override
-    public int getDimensionetotale() {return dimensionetotale;}
+    public int getDimensionetotale() {
+        return dimensionetotale;
+    }
 
     //Metodi
 
     @Override
     public int calcolaDimensionesPost() {
-        int dimensionetotale = super.calcolaDimensionesPost() +
-                getIdAlfanumerico().length() + 
-                getTitolo().length() + 
-                getDimensionePDF();
+        int dimensionetotale = super.calcolaDimensionesPost() + getIdAlfanumerico().length() + getTitolo().length() + getDimensionePDF();
         for (int i = 0; i < this.Citazioni.length; i++) {
             dimensionetotale = dimensionetotale + this.Citazioni[i].calcolaDimensionesPost();
         }
-        return dimensionetotale; 
+        return dimensionetotale;
     }
 
-    public void addCitazione(PostDocumentale CitazioneDaAggiugnere) {}
+    public void addCitazione(PostDocumentale CitazioneDaAggiugnere) {
+    }
 
 }
 

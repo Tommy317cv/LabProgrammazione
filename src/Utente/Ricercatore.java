@@ -1,4 +1,5 @@
 package Utente;
+
 /**
  * Creazione di una sottoclasse di 'Utente': 'Ricercatore'.
  * .
@@ -9,7 +10,7 @@ package Utente;
 public class Ricercatore extends Utente {
 
     private int hIndex;
-    private String [] paroleChiave;
+    private String[] paroleChiave;
 
     //Costruttore
 
@@ -42,12 +43,13 @@ public class Ricercatore extends Utente {
 
 //Metodi
 
-    public void AddParolaChiave(String ParolaChiaveDaAggiugnere) {}
+    public void AddParolaChiave(String ParolaChiaveDaAggiugnere) {
+    }
 
     //Metodo toString
 
     @Override
     public String toString() {
-        return "Ricercatore '"+getNICKNAME();
+        return "Ricercatore ' " + getNICKNAME();
     }
 }

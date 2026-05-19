@@ -62,7 +62,7 @@ public class Studente extends Utente {
 
     @Override
     public String toString() {
-        return "Studente '" + getNICKNAME();
+        return "Studente ' " + getNICKNAME();
     }
 
 }

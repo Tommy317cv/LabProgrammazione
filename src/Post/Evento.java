@@ -49,7 +49,9 @@ public class Evento extends Post implements Votabile {
         return descrizioneEvento;
     }
 
-    public Utente[] getListaInvitati() {return listaInvitati;}
+    public Utente[] getListaInvitati() {
+        return listaInvitati;
+    }
     //Setter
 
     public void setListaInvitati(Utente[] listaInvitati) {
@@ -59,7 +61,10 @@ public class Evento extends Post implements Votabile {
 
     //Metodi
 
-    public void addInvitati(Utente Invitato) {};
+    public void addInvitati(Utente Invitato) {
+    }
+
+    ;
 
     @Override
     public int calcolaDimensionesPost() {
